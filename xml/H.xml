@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE sample SYSTEM "edil transtr.dtd">
+<sample> <!--Stage 3 completed by GB--><head>H</head> 
+<entry>
+ 
+<br column="1" line="1"/><form><orth xml:id="H">H</orth>,</form><form><p>eighth letter of the Irish alphabet and first letter of the 
+<br column="1" line="2"/>second or <hi>h</hi> group in the Ogam alphabet, <bibl><title target="Auraic." xml:id="d0e22">Auraic.</title> <biblScope>1138</biblScope>, <biblScope>4229</biblScope></bibl>, 
+<br column="1" line="3"/><bibl><title target="IGT" xml:id="d0e33">IGT</title> <biblScope>Introd. § 4</biblScope></bibl>, consonant with masc. gender but not a letter 
+<br column="1" line="4"/>(<q>gion gur litear é</q>), <bibl><orphanScope target="d0e33">§ 17</orphanScope></bibl> (<bibl><title target="Auraic." xml:id="d0e49">Auraic.</title> <biblScope>3559</biblScope></bibl>. See <bibl><title xml:id="d0e56">Lewis and Short, 
+<br column="1" line="5"/>A Latin dictionary</title> <lbl>s.v.</lbl><biblScope>h</biblScope></bibl>). <lbl>Cf.</lbl> <bibl><title target="Graim." xml:id="d0e70">Graim.</title> <biblScope>2899</biblScope></bibl>-<bibl><orphanScope target="d0e70">02</orphanScope></bibl>. <bibl><title xml:id="d0e77">Ogam</title> <biblScope>3</biblScope></bibl> <oVar>úath</oVar> 
+<br column="1" line="6"/><trans><def>white-thorn</def></trans>. See Meroney, <bibl><title target="Speculum" xml:id="d0e92">Speculum</title> <biblScope>xxiv 28</biblScope></bibl> (thorn-like 
+<br column="1" line="7"/>shape of corresponding Ogam letter, infl. of h-like abbrev. 
+<br column="1" line="8"/>for Latin <frn lang="LA">autem</frn>). Not in earlier ogam inscriptions in Irish, 
+<br column="1" line="9"/><bibl>Macalister, <title xml:id="d0e108">Corpus Inscriptionum Insularum Celticarum</title> <biblScope>i</biblScope></bibl>, <bibl><orphanScope target="d0e108">v</orphanScope></bibl>, 
+<br column="1" line="10"/><bibl><title target="Thurn.Gramm." xml:id="d0e119">Thurn. Gramm.</title> <biblScope>10</biblScope></bibl>. <lbl>Cf.</lbl> <q>Menueh</q>, <bibl><title target="Thes." xml:id="d0e132">Thes.</title> <biblScope>ii 288.35</biblScope></bibl> and note. 
+<br column="1" line="11"/>Indicates length in prec. vowel in <q>Ternohc</q> (= <q>Ternóc</q>), 
+<br column="1" line="12"/><bibl><orphanScope target="d0e132">289.18</orphanScope></bibl>.</p></form> <form><p>
+<br column="1" line="13"/>In O. Ir. initial (and rarely medial) <hi>h</hi> is without phonetic 
+<br column="1" line="14"/>value, <bibl><title target="Thurn.Gramm." xml:id="d0e163">Thurn. Gramm.</title> <biblScope>19</biblScope></bibl>. In some wds. <hi>h</hi>- perh. from *<hi>y</hi> or 
+<br column="1" line="15"/>*<hi>p</hi>, <bibl><title target="PedersenVgl.Gr." xml:id="d0e175">Ped.</title> <biblScope>i 410</biblScope></bibl>(see <bibl><title target="Thurn.Gramm." xml:id="d0e182">Thurn. Gramm.</title> <biblScope>140</biblScope></bibl>). In <q>humaldoit</q>, <bibl><title target="Wb." xml:id="d0e192">Wb.</title> 
+<br column="1" line="16"/><biblScope>6<sup>d</sup>5</biblScope>, <orphanScope target="d0e192">8<sup>d</sup>26</orphanScope></bibl> (beside <q>umaldóit</q>, <bibl><orphanScope target="d0e192">13<sup>a</sup>17</orphanScope></bibl>) (Lat. <frn lang="LA">humilitat</frn>- <ref target="U 81.68">U 81.68</ref>) 
+<br column="1" line="17"/><hi>h</hi>- may be treated as mute, <bibl><title target="Thurn.Gramm." xml:id="d0e229">Thurn. Gramm.</title> <biblScope>20</biblScope></bibl>; in arch. 
+<br column="1" line="18"/><q>menmnihi</q>, <bibl><title target="Wb." xml:id="d0e240">Wb.</title> <biblScope>18<sup>a</sup>21</biblScope></bibl>(<lbl>a prima manu</lbl>), represents -<hi>ch</hi>-, <lbl>ib.</lbl> 
+<br column="1" line="19"/>On intervocalic -<hi>h</hi>- in Mid. Ir. (<q>ahé</q>, <bibl><title target="LU" xml:id="d0e267">LU</title> <biblScope>7008</biblScope></bibl>) see  <bibl><title target="BDD2" xml:id="d0e274">BDD²</title> 
+<br column="1" line="20"/><biblScope>595 n.</biblScope></bibl>; in <q>ahel</q> (<ref target="A 87.31">A 87.31</ref>) perh. a mark of hiatus. In <q>ahæ</q> (<ref target="A 87.28">A 87.28</ref>) 
+<br column="1" line="21"/>interj. gl. <lem lang="LA">hem</lem>, <bibl><title target="Ml" xml:id="d0e304">Ml.</title> <biblScope>131<sup>c</sup>3</biblScope></bibl>, -<hi>h</hi>- not merely graphic. <lbl>Cf.</lbl> <ref target="ahé">ahé</ref> 
+<br column="1" line="22"/>above and article <ref target="há">há</ref> below.</p></form> <form><p>
+<br column="1" line="23"/>Somet. for <hi>th.</hi> Note <q>Clohnai</q> = <q>Clothnai</q>, <bibl><title target="Ann.Inisf." xml:id="d0e343">Ann. Inisf.</title> <biblScope>1176.2</biblScope></bibl>
+<br column="1" line="24"/>(see <bibl>Facsimile, <orphanScope target="d0e343">Introd. 16</orphanScope></bibl>).</p></form> <form><p>
+<br column="1" line="25"/>In later spelling prefixed to initial stressed vowels after</p></form> 
+<br column="1" line="26"/><sense><form><p>(<b>i</b>) <case>g</case><number>s</number><gen>f.</gen>, <case>n</case><case>a</case><number>p.</number> <gen>f.</gen> and <gen>n.</gen> of def. article, see <ref target="I 184.79-81">I 184.79-81</ref>, <ref target="I 185.19">185.19</ref>, 
+<br column="1" line="27"/><ref target="I 185.20">20</ref>, <ref target="I 185.21">21</ref>, <ref target="I 185.24">24</ref>, <ref target="I 185.37">37</ref>. After <q>cacha</q>, <q>cecha</q> (<bibl><title target="Thurn.Gramm." xml:id="d0e420">Thurn. Gramm.</title> <biblScope>151</biblScope></bibl>), <case>g</case><number>s</number><gen>f.</gen> 
+<br column="1" line="28"/>of <q>cach</q>, <q>cech</q>, later also after <q>cacha</q>, <q>cecha</q> with masc., <ref target="C 2.65">C 2.65</ref>, 
+<br column="1" line="29"/><ref target="C 2.75">75</ref>, <ref target="C 3.4">3.4</ref>. In later Ir. before initial vowel of a noun with pl. 
+<br column="1" line="30"/>form difft. from the sg. after <q>trí</q>, <q>sé</q>, <q>cheithre</q>, <q>cheathra</q> 
+<br column="1" line="31"/>(<q>cethair</q>), <bibl><title target="IGT" xml:id="d0e486">IGT</title> <biblScope>Decl. Introd. 8 § 18</biblScope>.</bibl> See <bibl><title target="Thurn.Gramm." xml:id="d0e494">Thurn. Gramm.</title> 
+<br column="1" line="32"/><biblScope>151</biblScope>, <orphanScope target="d0e494">153</orphanScope></bibl>. After <q>día</q>, <q>dé</q> as gen. of time in <q>dia haoine dídine</q> 
+<br column="1" line="33"/>and other exx. See <ref target="3 día">3 día</ref> and <ref target="1 díden">1 díden</ref>, <bibl><title target="Thurn.Gramm." xml:id="d0e525">Thurn. Gramm.</title> <biblScope>151</biblScope></bibl>. </p></form></sense> 
+<sense><form><p>
+<br column="1" line="34"/>(<b>ii</b>) After (proclitic) <q>na</q> <case>n</case><case>a</case><number>s.</number> <gen>n.</gen> of <ref target="1 nach">1 nach</ref>, <bibl><title target="Thurn.Gramm." xml:id="d0e558">Thurn. Gramm.</title> 
+<br column="1" line="35"/><biblScope>151</biblScope>, <orphanScope target="d0e558">309</orphanScope></bibl>: <q>ní epur na haill</q>, <bibl><title target="Thes." xml:id="d0e572">Thes.</title> <biblScope>ii</biblScope></bibl>, <bibl><orphanScope target="d0e572">xxii.14</orphanScope></bibl> (<bibl><title target="Sg." xml:id="d0e583">Sg.</title> <biblScope>217</biblScope><lbl>marg. inf.</lbl></bibl>).</p></form></sense> <sense><form><p>
+<br column="1" line="36"/>(<b>iii</b>) After nom. of io-stems as proclitics, <bibl><title target="Thurn.Gramm." xml:id="d0e605">Thurn. Gramm.</title> 
+<br column="1" line="37"/><biblScope>151</biblScope></bibl>. <q>S. ua hImair</q>, <bibl><title target="AU" xml:id="d0e616">AU</title> <biblScope>i 440.7</biblScope></bibl>. After <q>in dara</q> (earlier <q>indala</q>), 
+<br column="1" line="38"/><bibl><title target="Thurn.Gramm." xml:id="d0e630">Thurn. Gramm.</title> <biblScope>151</biblScope></bibl>. See <ref target="I 214.65">I 214.65</ref>, <ref target="69">69</ref>. After <ref target="1 cía">1 cía</ref> <bibl><title target="Thurn.Gramm." xml:id="d0e646">Thurn. 
+<br column="1" line="39"/>Gramm.</title> <biblScope>292</biblScope></bibl>.</p></form></sense> <sense><form><p>
+<br column="1" line="40"/>(<b>iv</b>) After a poss. adj. <per>3</per> <number>s</number><gen>f.</gen> See <bibl><title target="Ériu" xml:id="d0e676">Ériu</title> <biblScope>xxiii 101</biblScope></bibl> on retention 
+<br column="1" line="41"/>of <hi>h</hi> following <q>a</q> <trans><def>her</def>:</trans> <q>a hétach</q>, <bibl><title target="Fraech" xml:id="d0e699">Fraech</title> <biblScope>210</biblScope></bibl>. See <ref target="2 a">2 a</ref>.</p></form></sense> <sense><form><p>
+<br column="1" line="42"/>(<b>v</b>) After forms of the copula, <bibl><title target="Thurn.Gramm." xml:id="d0e719">Thurn. Gramm.</title> <biblScope>152</biblScope></bibl>, <bibl><title target="TD" xml:id="d0e726">TD</title> 
+<br column="1" line="43"/><biblScope>Introd. lxxvii f.</biblScope></bibl>, <bibl><title xml:id="d0e734">Stories fr. Keating</title> <biblScope>xxiii</biblScope></bibl>: <tns>pret.</tns> <per>3</per> <number>s.</number> <q>ba</q>, <q>fa</q>, 
+<br column="1" line="44"/><ref target="I 318.21">I 318.21</ref>, (exx.) <ref target="I 273.36">273.36</ref>, <ref target="I 262.15">262.15</ref>; <tns>pres.</tns> <mood>indic.</mood> neg. <per>3</per> <number>s.</number> <q>ní</q>, 
+<br column="1" line="45"/><ref target="I 305.69">I 305.69</ref>, <ref target="I 305.72-3">72-3</ref>, <ref target="I 305.81-2">81-2</ref> (exx.) <ref target="I 305.85">85</ref>, <q>ni hinann</q>, <bibl><title target="OC." xml:id="d0e800">O'C.</title> <biblScope>78</biblScope></bibl> (<bibl><title xml:id="d0e807">H. 3.18</title>, 
+<br column="1" line="46"/><biblScope>61<sup>a</sup></biblScope></bibl>); <tns>fut.</tns> <per>3</per> <number>s.</number> (abs.) <q>budh hiomdha</q>, <bibl><title target="DDána" xml:id="d0e832">DDána</title> <biblScope>29.29</biblScope></bibl>.</p></form></sense> 
+<sense><form><p>
+<br column="1" line="47"/>(<b>vi</b>) After prepp., <bibl><title target="Thurn.Gramm." xml:id="d0e848">Thurn. Gramm.</title> <biblScope>152</biblScope></bibl>, see <ref target="A 6.45">A 6.45</ref>, <ref target="C 271.78">C 271.78</ref>, 
+<br column="1" line="48"/><ref target="C 273.43">273.43</ref>, <ref target="F 413.62">F 413.62</ref>, <ref target="L 4.79">L 4.79</ref>, <ref target="L 5.1">5.1</ref>, <ref target="L 5.20">20</ref>, <ref target="L 6.84">6.84</ref>, <ref target="L 7.76">7.76</ref>.</p></form></sense> 
+<sense><form><p>
+<br column="1" line="49"/>(<b>vii</b>) Before verbal forms, <bibl><title target="Thurn.Gramm." xml:id="d0e893">Thurn. Gramm.</title> <biblScope>152</biblScope></bibl>. After 
+<br column="1" line="50"/>particles <q>ro</q> (<q>do</q>), neg. <q>ní</q>, shown before passive forms in mid. 
+<br column="1" line="51"/>and mod. Ir.: <q>ro hathchummad</q> (<tns>pret.</tns> <voice>pass.</voice>), <bibl><title target="LU" xml:id="d0e925">LU</title> <biblScope>7995</biblScope></bibl>. <q>ro 
+<br column="1" line="52"/>hainced</q>, <bibl><title target="TBC" xml:id="d0e937">TBC</title> <biblScope>4510</biblScope></bibl>, <q>do hairmhedh</q>, <bibl><title target="Caithr.CC" xml:id="d0e947">Caithr. CC</title> <biblScope>§ 60 (36.13)</biblScope></bibl>. 
+<br column="1" line="53"/><q>ra hachnít</q>, <bibl><title target="TBC" xml:id="d0e958">TBC</title> <biblScope>76</biblScope></bibl>. <q>ní hantoir</q> (<tns>pres.</tns> <mood>indic.</mood> <voice>pass.</voice>), <bibl><title target="Sitsungsb.Pr.Akad." xml:id="d0e977">Sitzb.</title> 
+<br column="1" line="54"/><biblScope>v (1919) 93 § 29</biblScope></bibl>. <q>ni hairemthar</q> (<tns>fut.</tns> (?) <voice>pass.</voice>), <bibl><title target="RC" xml:id="d0e994">RC</title> <biblScope>xviii 
+<br column="1" line="55"/>173.12</biblScope></bibl> (Tig.). <q>ní himmertha</q> (<mood>condit.</mood> <voice>pass.</voice> <number>sg.</number>?), <bibl><title target="TBC" xml:id="d0e1015">TBC</title> <biblScope>2874</biblScope></bibl>
+<br column="1" line="56"/>After <q>mani</q>: <q>muna hairgithur</q>, <bibl><title target="Laws" xml:id="d0e1029">Laws</title> <biblScope>ii 2.23 Comm.</biblScope></bibl> Exx. cited 
+<br column="1" line="57"/><ref target="N 42.59">N 42.59</ref> of written <hi>h</hi>- prefixed to active verbs after neg. 
+<br column="1" line="58"/>partic. <q>ní</q> in <bibl><title target="SR" xml:id="d0e1050">SR</title></bibl> are not decisive. Note <q>-hinneosfam</q> (<tns>fut.</tns> <per>1</per> <number>p.</number>) 
+<br column="1" line="59"/><bibl><title target="Keat." xml:id="d0e1067">Keat.</title> <biblScope>ii 6370</biblScope></bibl>.</p></form> <form><p>
+<br column="1" line="60"/>After <ref target="2 ná">2 ná</ref>, neg. particle in <gram>rel.</gram> clause: <q>in tí na haittrebann</q> 
+<br column="1" line="61"/>(<tns>pres.</tns> <mood>indic.</mood> <per>3</per> <number>s.</number>), <bibl><title target="PH" xml:id="d0e1106">PH</title> <biblScope>2074</biblScope></bibl>.<q>na rig . . . herlathrighit</q>, <bibl><orphanScope target="d0e1106">4226</orphanScope></bibl>. 
+<br column="1" line="62"/>After <ref target="3 ná">3 ná</ref> (<q>ar ná</q> <lbl>etc.</lbl>) (subord. conj. introd. neg. clause), 
+<br column="1" line="63"/><bibl><title xml:id="d0e1138">Thurn. Gramm</title> <biblScope>152</biblScope></bibl>. <q>in tan na hantai</q> (<mood>indic.</mood> <tns>pres.</tns> <per>2</per> <number>s.</number>), 
+<br column="1" line="64"/><bibl><title target="LU" xml:id="d0e1161">LU</title> <biblScope>9003</biblScope></bibl>. <q>conna hanat</q> (<mood>subj.</mood> <tns>pres.</tns> <per>3</per> <number>p.</number>), <bibl><title target="LL" xml:id="d0e1183">LL</title> <biblScope>13359</biblScope></bibl>. <q>arnā 
+<br column="1" line="65"/>hēilnet</q>, <bibl><title target="Corm.Y" xml:id="d0e1195">Corm. Y</title> <biblScope>1082</biblScope></bibl>. After <ref target="1 ná">1 ná</ref> (adv. of negation) followed 
+<br column="1" line="66"/>by impv. (and subj.); <q>na hadair</q>, <bibl><title target="PH" xml:id="d0e1219">PH</title> <biblScope>7310</biblScope></bibl>. <q>na himighed i 
+<br column="1" line="67"/>sdaighri</q>, <bibl><title target="RosaAngl." xml:id="d0e1231">Rosa Ang.</title> <biblScope>242.17</biblScope></bibl>.</p></form></sense> <sense><form><p>
+<br column="1" line="68"/>(<b>viii</b>) After <ref target="4 ná">4 ná</ref>, <bibl><title target="Thurn.Gramm." xml:id="d0e1251">Thurn. Gramm.</title> <biblScope>153</biblScope></bibl>, perh. phonetic in 
+<br column="1" line="69"/><q>grāin nā hirḟūath</q>, <bibl><title target="Arch." xml:id="d0e1262">Arch.</title> <biblScope>iii 5.8</biblScope></bibl>. <q>na haimbil</q>, <bibl><title target="Laws" xml:id="d0e1272">Laws</title> <biblScope>ii 46.1</biblScope></bibl>.</p></form></sense> <sense><form><p>
+<br column="1" line="70"/>(<b>ix</b>) After particle <q>a</q> before some numerals with vocalic 
+<br column="1" line="71"/>initial where no noun follows, see <ref target="3 a">3 a</ref>, <bibl><title target="Sc.G.St." xml:id="d0e1297">Sc. G. Stud.</title> <biblScope>v 42 f.</biblScope></bibl>, 
+<br column="1" line="72"/><bibl><title target="Thurn.Gramm." xml:id="d0e1305">Thurn. Gramm.</title> <biblScope>153</biblScope></bibl>. </p></form> <form><p>
+<br column="1" line="73"/>No doubt also after <q>assa</q> with <gram>compar.</gram>, see <bibl><title target="Thurn.Gramm." xml:id="d0e1324">Thurn. Gramm.</title> 
+<br column="1" line="74"/><biblScope>153</biblScope></bibl>, but no exx. available.</p></form></sense> </entry>
+ 
+<entry>
+<br column="1" line="75"/><form><orth xml:id="h'">h'</orth></form><egForm><p>= <oVar>th'</oVar> form of poss. <pos>adj.</pos> <per>2</per> <number>s.</number> before vowels and <oVar>ḟ</oVar> before a 
+<br column="1" line="76"/>vowel. See <ref target="1 t">1 t</ref>, <ref target="2 do">2 do</ref>: <q>ní h'opair chóir dombiurt-sa fort-su</q> 
+<br column="1" line="77"/>`<quote>it was not a labour befitting you, <lbl>etc.</lbl></quote>', <bibl><title target="Táin" xml:id="d0e1379">Táin</title> <biblScope>1236</biblScope></bibl> (= <q>ní 
+<br column="1" line="78"/>hopair</q>, <bibl><title target="LL" xml:id="d0e1391">LL</title> <biblScope>8783</biblScope></bibl>). <q>nip sí th'opar comadas</q>, <bibl><title target="LU" xml:id="d0e1401">LU</title> <biblScope>5261</biblScope></bibl>= <q>ní hí 
+<br column="1" line="79"/>h'obair</q>, <bibl><title target="TBCSt." xml:id="d0e1413">TBC St.</title> <biblScope>1274</biblScope></bibl> (see O'Rahilly, <bibl><title target="Hermathena" xml:id="d0e1420">Hermathena</title> <biblScope>xx 192</biblScope></bibl> 
+<br column="1" line="80"/><lbl>etc.</lbl> on change of th- to phonetic h-). <q>ar h'ionchaibh</q>, <bibl><title target="ZCP" xml:id="d0e1434">ZCP</title> <biblScope>xii 
+<br column="1" line="81"/>379.24</biblScope></bibl>. <q>aiseag h'anma</q> (= <frn lang="LA">animam tuam</frn>), <bibl><title target="TSh." xml:id="d0e1449">TSh.</title> <biblScope>539</biblScope></bibl>. See 
+<br column="1" line="82"/><ref target="hám">hám</ref> with <hi>h</hi>- for <hi>th</hi>-.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="1"/><form><orth xml:id="há">há</orth></form><egForm><p><pos>interj.</pos> <q>ha h.<oRef/> a cristaighi</q>, <bibl><title target="Fier." xml:id="d0e1476">Fier.</title> <biblScope>67</biblScope></bibl> <lbl>v.l.</lbl>, <bibl><orphanScope target="d0e1476">n. 8</orphanScope></bibl> (<q>o a C.</q>, text).</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="2"/><form><orth xml:id="habergin">habergin</orth></form><form><p><pos value="n"></pos>with unlen. -<hi>b</hi>- and len. -<hi>g</hi>- (Engl. loanwd. See <bibl><title target="Risk" xml:id="d0e1510">Risk</title> 
+<br column="2" line="3"/><biblScope>166 (2)</biblScope></bibl>): <q>poll haberghion</q> = <trans>of an <def>habergeon</def></trans>, <bibl><title xml:id="d0e1526">Exod.</title> <biblScope>xxviii 32</biblScope></bibl>. 
+<br column="2" line="4"/><lbl>Cf.</lbl> <ref target="brigúin">brigúin</ref> and <bibl><title target="Risk" xml:id="d0e1540">Risk</title> <biblScope>45</biblScope></bibl>.</p></form> </entry>
+ 
+<entry>
+ 
+<br column="2" line="5"/><form><orth xml:id="haingersoip">haingersoip</orth></form><egForm><p><pos value="n"></pos><case>d</case><number>p.</number> (Engl. loanword): <q>go gcressoip ┐ h.<oRef/></q> <trans>`<def>hangers</def>' 
+<br column="2" line="6"/>(on swordbelts)</trans>, <bibl><title target="Fl.Earls" xml:id="d0e1574">Fl. Earls</title> <biblScope>102.1</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="7"/><form><orth xml:id="haiste">haiste</orth></form><egForm><p><pos value="n"></pos>see <ref target="(h)aiste">(h)aiste</ref> (<ref target="A 249.71">A 249.71</ref>) and <ref target="taiste">taiste</ref> (<ref target="T 54.54">T 54.54</ref>) and <lbl>cf.</lbl> 
+<br column="2" line="8"/>compd. <q>air dhruim-theisde (MS) na longa</q> <trans><def>hold</def>, <def>deck</def>?</trans> 
+<br column="2" line="9"/> <bibl><title target="Leabh.óLáimhsgr." xml:id="d0e1623">Leabh. Ó Láimhsgr.</title> <biblScope>xvi 2339</biblScope></bibl>, <q>do dhruim-theasda</q>, <bibl><orphanScope target="d0e1623">6883</orphanScope></bibl>. 
+<br column="2" line="10"/>See <bibl><title target="Gadelica" xml:id="d0e1639">Gadelica</title> <biblScope>286</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="11"/><form><orth xml:id="halabard">halabard</orth></form><form><p><pos value="n"></pos>(AN or Engl. loanword, <bibl><title target="Risk" xml:id="d0e1657">Risk</title> <biblScope>34</biblScope>, <orphanScope target="d0e1657">41</orphanScope>, <orphanScope target="d0e1657">163</orphanScope></bibl>) see 
+<br column="2" line="12"/><ref target="(h)alabard">(h)alabard</ref>, <ref target="A 281.75">A 281.75</ref>.</p></form> </entry>
+ 
+<entry>
+ 
+<br column="2" line="13"/><form><orth xml:id="halla">halla</orth></form><egForm><p><pos value="n"></pos><gen>m.</gen> (Engl. loanwd., <bibl><title target="Bidrag" xml:id="d0e1691">Bidrag</title> <biblScope>104</biblScope></bibl>): <q>poirsi. .idir an eclais ┐ 
+<br column="2" line="14"/>an h.<oRef/> righdha</q> `<trans>royal <def>hall</def></trans>' = <frn lang="LA">regiam</frn>, <bibl><title target="ITS" xml:id="d0e1711">ITS</title> <biblScope>xix 104.z</biblScope></bibl>(<q>talla</q>, 
+<br column="2" line="15"/><lbl>v.l.</lbl>). <q>cuid ele os cinn an h.<oRef/></q>, <bibl><title target="Maund." xml:id="d0e1728">Maund.</title> <biblScope>250</biblScope></bibl>. <q>gu ngriananuib. . . ., 
+<br column="2" line="16"/>gu halladaibh righda</q>, <bibl><title target="MarcoP." xml:id="d0e1740">Marco P.</title> <biblScope>69</biblScope>, <orphanScope target="d0e1740">72</orphanScope></bibl>. <q>palas. . . cu h.<oRef/> rigda ┐ 
+<br column="2" line="17"/>gu seomradhaib solusda</q>, <bibl><orphanScope target="d0e1740">147</orphanScope></bibl>. <q>h.<oRef/> bhainnse</q> = <frn lang="FR">la salle de la 
+<br column="2" line="18"/>noce</frn>, <bibl><title target="TrompanabhF." xml:id="d0e1767">Trompa na bhF.</title> <biblScope>2501</biblScope></bibl>. <q>go h.<oRef/> cóisreach</q>, <bibl><orphanScope target="d0e1767">2511</orphanScope></bibl>.</p></egForm> <egForm><p>
+<br column="2" line="19"/>Read <q>naem-hálla for naemh-álla</q>, <bibl><title target="SmaointeB.Chr." xml:id="d0e1790">Smaointe B. Chr.</title> <biblScope>5470</biblScope></bibl>
+<br column="2" line="20"/>(cited <lbl>s.v.</lbl> <ref target="1 alla">1 alla</ref>), Shaw, <bibl><title target="Éigse" xml:id="d0e1804">Éigse</title> <biblScope>v 78</biblScope></bibl>. See <ref target="1 alla">1 alla</ref>, <ref target="talla">talla</ref>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="21"/><form><orth xml:id="háloint">háloint</orth></form><egForm><p><pos value="n"></pos><case>g</case><number>s.</number> (Engl. loanwd.): <q>ag cur síoda nó h.<oRef/> ar a cíar caile</q> 
+<br column="2" line="22"/>`<trans><def>holland</def></trans> (?)' (Gloss.) (<trans>type of <def>linen</def> <def>fabric</def></trans>), <bibl><title target="Párl.namB." xml:id="d0e1850">Párl. na mB.</title> 
+<br column="2" line="23"/><biblScope>2607</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="24"/><form><orth xml:id="hám">hám</orth></form><eg><p><pos value="x"></pos>= <q>thám</q>: in phr. <q>ám h.<oRef/></q>, <bibl><title target="MU2" xml:id="d0e1875">MU²</title> <biblScope>367</biblScope></bibl>(<bibl><title target="LL" xml:id="d0e1884">LL</title> <biblScope>34840</biblScope></bibl>) <q>`for ám 
+<br column="2" line="25"/>thám</q> <lbl>etc.</lbl>', Ed., Gloss. See <ref target="2 ám">2 ám</ref>. Taken by C. O'Rahilly as 
+<br column="2" line="26"/>misreading by LL scribe of orig. <q>áin tháin</q>, <bibl><title target="Éigse" xml:id="d0e1907">Éigse</title> <biblScope>xv 4</biblScope></bibl>, <bibl><orphanScope target="d0e1907">5</orphanScope></bibl>.</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="27"/><form><orth xml:id="hannla">hannla</orth></form><egForm><p><pos value="n"></pos><gen>m.</gen> (Engl. loanword): <q>shín mé thorm. . ., is mo 
+<br column="2" line="28"/>hannlaibh sínte</q> <trans>(<term>lit.</term> <def>handles</def>) <term>fig.</term> <def>legs</def>, <def>limbs</def></trans>, <bibl><title target="ZCP" xml:id="d0e1955">ZCP</title> <biblScope>v 206.34</biblScope></bibl>
+<br column="2" line="29"/>(Midn. C.).</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="30"/><form><orth xml:id="hata">hata</orth></form><egForm><p><pos value="n"></pos><gen>m.</gen> (Engl. loanword) <trans><def>hat</def>:</trans> <q>a gcathbharr . . ./ tug siad . . ./ 
+<br column="2" line="31"/>uatha[ibh] ar mhala[i]rt h.<oRef/> (: tapa)</q>, <bibl><title target="Celtica" xml:id="d0e1987">Celtica</title> <biblScope>iv 110 § 15</biblScope></bibl>. <q>gan 
+<br column="2" line="32"/>h.<oRef/> luach thrí bpunta</q>, <bibl><title xml:id="d0e1999">Dán na mBráthar Mionúr</title> (Mhág 
+<br column="2" line="33"/>Craith) <biblScope>377 § 3</biblScope></bibl>. <q>gearrh.<oRef/> mín dubh</q>, <bibl><title target="PCT" xml:id="d0e2011">PCT</title> <biblScope>1494</biblScope></bibl>. <q>h.<oRef/> múlla aird 
+<br column="2" line="34"/>ar do chionn</q> <tr>a high-crowned(?) hat</tr>, <bibl><title target="Éigse" xml:id="d0e2026">Éigse</title> <biblScope>iv 285 § 15</biblScope></bibl>. See 
+<br column="2" line="35"/><ref target="2 att">2 att</ref>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="36"/><form><orth xml:id="hatán">hatán</orth></form><egForm><p><pos value="n"></pos>= <oVar>atán</oVar>: <q>aonchóta eile gan h.<oRef/></q> <trans><def>hood</def> (or <def>cowl</def>) attached 
+<br column="2" line="37"/>to cloak (?)</trans>, <bibl><title target="Rial.S.F." xml:id="d0e2065">Rial. S.F.</title> <biblScope>1866</biblScope></bibl>. <lbl>Leg.</lbl> <q>h-atán</q> ? <lbl>Cf.</lbl> <q>maille lé 
+<br column="2" line="38"/>hata . . . gan atán</q> (= <frn lang="LA">tunicam . . . sine caputio</frn>), <bibl><orphanScope target="d0e2065">1383-4</orphanScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="39"/><form><orth xml:id="hé">hé</orth></form><egForm><p><pos>interj.</pos> (Engl. loanword): <q>h.<oRef/>, h.<oRef/>, bhog é laoich</q>, <bibl><title target="PCT" xml:id="d0e2111">PCT</title> <biblScope>1009</biblScope></bibl>. </p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="40"/><form><orth xml:id="heresiarca">heresiarca</orth></form><egForm><p><pos value="n"></pos>(Lat. loanword) <trans><def>heresiarch</def>:</trans> <q>an dá h.<oRef/> sa</q>, <bibl><title target="MacAingil" xml:id="d0e2138">Mac 
+<br column="2" line="41"/>Aingil</title> <biblScope>6102</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="42"/><form><orth xml:id="(h)errnia">(h)errnia</orth></form><eg><p><pos value="ind"></pos><q>h.<oRef/> adhon is edh is errnia and</q>, <bibl><title target="RosaAngl." xml:id="d0e2160">Rosa Ang.</title> <biblScope>236</biblScope>
+<br column="2" line="43"/>heading</bibl>. <q>errnia fire</q>, <bibl><orphanScope target="d0e2160">8</orphanScope>, <orphanScope target="d0e2160">20</orphanScope></bibl>. Lat. word?</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="44"/><form><orth xml:id="hiacinthe">hiacinthe</orth></form><egForm><p><pos value="n"></pos><case>g</case><number>s.</number> (Lat. loanword): <q>róba . . . ar dhath h.<oRef/></q> (<bibl><title xml:id="d0e2197">Exod.</title> 
+<br column="2" line="45"/><biblScope>xxviii</biblScope></bibl>),  <bibl><title target="Leabh.óLáimhsgr." xml:id="d0e2205">Leabh. Ó Láimhsgr.</title> <biblScope>v 125.7</biblScope></bibl> (Stair an Bhíobla ii).</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="46"/><form><orth xml:id="hinnse">hinnse</orth></form><egForm><p><pos value="n"></pos>(Engl. loanword): <q>buille . . . air an gcomhla, gur chuir 
+<br column="2" line="47"/>da bacánuibh ┐ dá hinnsighibh ī</q> `<trans><def>hinges</def></trans>', <bibl><title target="ITS" xml:id="d0e2233">ITS</title> <biblScope>xxiv 130.33</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="48"/><form><orth xml:id="hisóip">hisóip</orth> = <orth xml:id="ísóip">ísóip</orth>:</form><eg><p><pos value="x"></pos><q>iomchraithe tú hīsōip oram</q> (= <frn lang="FR">asperges me 
+<br column="2" line="49"/>hyssopo</frn>), <bibl><title target="TrompanabhF." xml:id="d0e2261">Trompa na bhF.</title> <biblScope>555</biblScope></bibl>.</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="50"/><form><orth xml:id="hob-">hob-</orth></form><eg><p><pos value="pref"></pos>(unlen. -<hi>b</hi>) (Engl. loanword) in derisory command: <q>h.<oRef/> 
+<br column="2" line="51"/>-amach 's beir leat do shár-Ghaelg-sa</q> <tr>off with you</tr>, <bibl><title target="Celtica" xml:id="d0e2290">Celtica</title> <biblScope>iv 
+<br column="2" line="52"/>106  § 3</biblScope>.</bibl></p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="53"/><form><orth xml:id="hocus">hocus</orth></form><egForm><p><pos value="n"></pos><gen>m.</gen> (Engl. loanwd. See Ó Cuív, <bibl><title target="Éigse" xml:id="d0e2313">Éigse</title> <biblScope>x 71</biblScope></bibl>) = <oVar>oc(c)us</oVar>: 
+<br column="2" line="54"/><oVar>h.<oRef/></oVar> = <frn lang="LA">maluam</frn>,  <bibl><title target="RSláinte" xml:id="d0e2330">RSláinte</title> <biblScope>1008</biblScope></bibl>, cited <lbl>s.v.</lbl> <ref target="holihoc">holihoc</ref>. <q>uiola ┐ h.<oRef/></q> 
+<br column="2" line="55"/>`<quote>the two kinds of mallows</quote>', <bibl><title target="RosaAngl." xml:id="d0e2351">Rosa Ang.</title> <biblScope>260.z</biblScope></bibl>. <q>blath hocuis</q> 
+<br column="2" line="56"/>`<trans><def>mallow</def></trans> <tr>flowers</tr>', <bibl><orphanScope target="d0e2351">106.19</orphanScope></bibl>. <q>malua uisgue</q> (<lbl>leg.</lbl> <q>uisque</q>, <lbl>i.e.</lbl> 
+<br column="2" line="57"/><q>uisce</q>, ed.) <q>.i. h.<oRef/> mor</q>, <bibl><title target="Arch." xml:id="d0e2393">Arch.</title> <biblScope>i 330 § 131</biblScope></bibl>. </p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="58"/><form><orth xml:id="holihoc">holihoc</orth></form><egForm><p><pos value="n"></pos>(Engl. loanword) <trans><def>mallow</def>:</trans> <q>dā gnē an sdicados hocus ┐ 
+<br column="2" line="59"/>h.<oRef/></q> = <frn lang="LA">bis maluam</frn>,  <bibl><title target="RSláinte" xml:id="d0e2425">RSláinte</title> <biblScope>1008</biblScope></bibl>. </p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="60"/><form><orth xml:id="hóp">hóp</orth></form><egForm><p><pos value="n"></pos>(Engl. loanword) <trans><def>hops</def> (ingredient of ale, <lbl>etc.</lbl>):</trans> <q>h.<oRef/> do leanna 
+<br column="2" line="61"/>bhuig</q>, <bibl><title target="MeasgraD." xml:id="d0e2457">Measgra D.</title> <biblScope>8.31</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="62"/><form><orth xml:id="hor">hor</orth></form><eg><p><pos value="x"></pos>see <ref target="2 or">2 or</ref>.</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="63"/><form><orth xml:id="húda">húda</orth></form><egForm><p><pos value="n"></pos><gen>m.</gen> (Engl. loanword) <trans><def>hood</def>:</trans> <q>an línéadach fínealta, ┐ na 
+<br column="2" line="64"/>húduighe</q> = <tr>the hoods</tr>, <bibl><title xml:id="d0e2505">Is.</title> <biblScope>iii 23</biblScope></bibl>. <q>is gnáth úrla fá h.<oRef/></q>, <bibl><title target="ÓBruad." xml:id="d0e2515">Ó Bruad.</title> 
+<br column="2" line="65"/><biblScope>i 74. 13</biblScope></bibl>. <q>h.<oRef/> cóirne</q> `<trans><def>skull-cap</def></trans>', <bibl><biblScope>iii 138.11</biblScope></bibl>. <q>h.<oRef/></q> (<q>húghda</q>, MSS) 
+<br column="2" line="66"/><q>geal gan ceal ribínighe</q>, <bibl><title target="ZCP" xml:id="d0e2544">ZCP</title> <biblScope>v 211.259</biblScope></bibl> (Midn.C.). <q>luach do 
+<br column="2" line="67"/>h.<oRef/></q>, <bibl><orphanScope target="d0e2544">215.423</orphanScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="68"/><form><orth xml:id="húice">? húice</orth></form><egForm><p><pos value="n"></pos>(perh. Engl. <frn lang="EN">tucker, frill</frn>, <lbl>etc.</lbl> worn round neck, with <hi>h</hi> 
+<br column="2" line="69"/>for <hi>t</hi>): <q>tug siad . . ./ a gcin[n]bheart chatha ar h.<oRef/></q> <trans>(someth. 
+<br column="2" line="70"/>like a fancy <def>head-</def> or <def>neckcloth</def> is required meaning)</trans>, <bibl><title target="Celtica" xml:id="d0e2594">Celtica</title> 
+<br column="2" line="71"/><biblScope>iv 110 § 17</biblScope></bibl>.</p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="72"/><form><orth xml:id="huiste">huiste</orth></form><form><p><pos value="n"></pos>(Engl. loanwd.) <trans><def>hutch</def>, <def>chest</def></trans>, see <ref target="uiste">uiste</ref>.</p></form> </entry>
+ 
+<entry>
+ 
+<br column="2" line="73"/><form><orth xml:id="Hungáire(ch)">Hungáire(ch)</orth></form><eg><p><pos value="pn"></pos>(<lbl>cf.</lbl> <q>an Hungaria</q>, <bibl><title target="Celtica" xml:id="d0e2642">Celtica</title> <biblScope>iv 162 § 231</biblScope></bibl>): <q>chum na 
+<br column="2" line="74"/>Hungáire</q>, <bibl><title target="AU" xml:id="d0e2654">AU</title> <biblScope>ii 306</biblScope></bibl>. <q>I., rīoghan . . . Hungáirech bain- 
+<br column="2" line="75"/>treabhach Dé</q>, <bibl><title target="Celtica" xml:id="d0e2666">Celtica</title> <biblScope>iv 169 § 271</biblScope></bibl>.</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="76"/><form><orth xml:id="hunn">hunn</orth></form><eg><p><pos value="x"></pos>= <q>shunn</q> (see <ref target="sunn">sunn</ref>): <q>oh.<oRef/> imacc</q>, Jackson, <bibl><title xml:id="d0e2693">Gaelic notes in 
+<br column="2" line="77"/>Book of Deer</title>, <biblScope>19.19</biblScope></bibl>.</p></eg> </entry>
+ 
+<entry>
+ 
+<br column="2" line="78"/><form><orth xml:id="húrla-hárla">húrla-hárla</orth></form><egForm><p><pos value="n"></pos>(Engl. <frn lang="EN">hurl</frn> and <frn lang="EN">harl</frn>?): <q>h. h.<oRef/></q> (<trans>a <def>cheer</def></trans>, ed. note), 
+<br column="2" line="79"/><bibl><title target="ÓBruad." xml:id="d0e2729">Ó Bruad.</title> <biblScope>ii 68.4</biblScope></bibl>. <oVar>húrla-búrla</oVar>, <lbl>etc.</lbl>, <bibl><title target="Éigse" xml:id="d0e2742">Éigse</title> <biblScope>v 46</biblScope></bibl>. </p></egForm> </entry>
+ 
+<entry>
+ 
+<br column="2" line="80"/><form><orth xml:id="hyperdúlia:">hyperdúlia:</orth></form><eg><p><pos value="n"></pos><q>íomháigh na hóighe Muire . . . d'adhradh dá 
+<br column="2" line="81"/>ngoirthear h.<oRef/></q> = <frn lang="LA">adoratione hyperduliæ</frn>, <bibl><title xml:id="d0e2767">Buaidh na Naomh- 
+<br column="2" line="82"/>chroiche</title> (Ó Suilleabháin) <biblScope>6191</biblScope></bibl>. Lat. word?</p></eg> </entry> </sample>
+

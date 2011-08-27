@@ -1,0 +1,740 @@
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Dr Maxim Fomin (University of Ulster) -->
+<!ELEMENT sample (head | entry+ | superEntry+)*>
+<!ELEMENT superEntry (entry+ | form)*>
+<!ELEMENT entry (lb | cb | br | form | eg | egForm | sense | p+)*>
+<!ATTLIST entry
+	type CDATA #IMPLIED
+	xml:id ID #IMPLIED
+>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT form (#PCDATA | b | br | orth | lb | cb | p | expan)*>
+<!ELEMENT orth (#PCDATA)*>
+<!ATTLIST orth
+	xml:id CDATA #IMPLIED
+>
+<!ELEMENT eg (p | b | br | lb | cb)*>
+<!ELEMENT sense (#PCDATA | lb | cb | br | b | egForm | form | eg | sense | p)*>
+<!ATTLIST sense
+	sameAs IDREF #IMPLIED
+>
+<!ELEMENT egForm (p | br | b | lb | cb | sense)*>
+<!ELEMENT p (#PCDATA | lem | frn | table | q | expan | itype | tr | trans | hi | sup | b | cb | lb | br | lbl | gram | tns | mood | voice | term | pos | per | case | number | quote | xref | ref | oVar | oRef | mentioned | sub | gen | bibl)*>
+<!ELEMENT table (((head)*, (row*)) | br)*> 
+<!ATTLIST table
+      rows NMTOKEN #IMPLIED
+      cols NMTOKEN #IMPLIED
+>
+<!ELEMENT row ((cell | table)*)+> 
+<!ATTLIST row
+      role CDATA #IMPLIED
+>
+<!ELEMENT cell (#PCDATA)> 
+<!ATTLIST cell
+      role CDATA #IMPLIED
+      rows CDATA "1"
+      cols CDATA "1"
+>
+<!ELEMENT mentioned (#PCDATA | oVar | br | lb | cb | hi)*>
+<!ELEMENT trans (#PCDATA | tr | def | br | sup | lbl | hi | oVar | pos | xref | ref | lb | cb | q | number | gram | term | frn | bibl)*>
+<!ELEMENT def (#PCDATA | sup | br | lb | cb | hi)*>
+<!ATTLIST def
+	lang CDATA #IMPLIED
+>
+<!ELEMENT tr (#PCDATA | br | frn | lbl | lb | oRef | cb)*>
+<!ATTLIST tr
+	lang CDATA #IMPLIED
+>
+<!ELEMENT hi (#PCDATA | sup | b | br | lbl | term | lb | cb)*>
+<!ELEMENT b (#PCDATA | br | lb | cb)*>
+<!ELEMENT frn (#PCDATA | expan | br | sup | lbl | lb | cb)*>
+<!ATTLIST frn
+	lang CDATA #IMPLIED
+>
+<!ELEMENT lem (#PCDATA | br | lb | lbl | cb)*>
+<!ATTLIST lem
+	lang CDATA #IMPLIED
+>
+<!ELEMENT sup (#PCDATA | hi | b)*>
+<!ELEMENT sub (#PCDATA | hi | b)*>
+<!ELEMENT q (#PCDATA | frn | oVar | oRef | expan | b | br | lbl | hi | sup | cb | lb)*>
+<!ELEMENT quote (#PCDATA | br | lbl | oRef | hi | frn | sup | cb | lb)*>
+<!ATTLIST quote
+	lang CDATA #IMPLIED
+>
+<!ELEMENT pos (#PCDATA | br)*>
+<!ATTLIST pos
+	value CDATA #IMPLIED
+	xml:id ID #IMPLIED
+	corresp IDREFS #IMPLIED
+>
+<!ELEMENT lbl (#PCDATA | br | lb | cb)*>
+<!ELEMENT oVar (#PCDATA | br | lb | cb | oRef | frn | hi | sup | expan)*>
+<!ELEMENT itype (#PCDATA | br | lb | cb | hi | sup)*>
+<!ELEMENT gram (#PCDATA | br)*>
+<!ELEMENT case (#PCDATA)>
+<!ELEMENT per (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT tns (#PCDATA | br)*>
+<!ATTLIST tns
+	xml:id ID #IMPLIED
+	corresp IDREFS #IMPLIED
+>
+<!ELEMENT expan (#PCDATA | br | cb | lb)*>
+<!ATTLIST expan
+	xml:id CDATA #IMPLIED
+	corresp IDREFS #IMPLIED
+	lang IDREF #IMPLIED
+	abbr CDATA #IMPLIED
+	resp IDREF #IMPLIED
+>
+<!ELEMENT mood (#PCDATA | br | cb | lb)*>
+<!ELEMENT gen (#PCDATA)>
+<!ELEMENT voice (#PCDATA)>
+<!ELEMENT term (#PCDATA | br)*>
+<!ELEMENT ref (#PCDATA | br | lb | cb | sup)*>
+<!ATTLIST ref
+	target CDATA #IMPLIED
+>
+<!ELEMENT xref (#PCDATA | br | lb | cb | oRef)*>
+<!ATTLIST xref
+	target CDATA #IMPLIED
+>
+<!ELEMENT bibl (#PCDATA | lbl | title | br | biblScope | orphanScope)*>
+<!ELEMENT title (#PCDATA | sup | br)*>
+<!ATTLIST title
+	target CDATA #IMPLIED
+	xml:id ID #IMPLIED
+>
+<!ELEMENT biblScope (#PCDATA | sup | br)*>
+<!ELEMENT orphanScope (#PCDATA | sup | br)*>
+<!ATTLIST orphanScope
+	target IDREFS #IMPLIED
+>
+<!ELEMENT br EMPTY>
+<!ATTLIST br
+	column CDATA #IMPLIED
+	line CDATA #IMPLIED
+>
+<!ELEMENT cb EMPTY>
+<!ATTLIST cb
+	n CDATA #IMPLIED
+>
+<!ELEMENT lb EMPTY>
+<!ATTLIST lb
+	n CDATA #IMPLIED
+>
+<!ELEMENT oRef EMPTY>
+<!ENTITY aacute "&#x00E1;">
+<!ENTITY Aacute "&#x00C1;">
+<!ENTITY acirc "&#x00E2;">
+<!ENTITY Acirc "&#x00C2;">
+<!ENTITY agrave "&#x00E0;">
+<!ENTITY Agrave "&#x00C0;">
+<!ENTITY aring "&#x00E5;">
+<!ENTITY Aring "&#x00C5;">
+<!ENTITY atilde "&#x00E3;">
+<!ENTITY Atilde "&#x00C3;">
+<!ENTITY auml "&#x00E4;">
+<!ENTITY Auml "&#x00C4;">
+<!ENTITY aumlacute "&#xE419;">
+<!ENTITY aelig "&#x00E6;">
+<!ENTITY AElig "&#x00C6;">
+<!ENTITY AEligacute "&#x01FC;">
+<!ENTITY aeligmacr "&#x01E3;">
+<!ENTITY aeligacute "&#x01FD;">
+<!ENTITY ccedil "&#x00E7;">
+<!ENTITY Ccedil "&#x00C7;">
+<!ENTITY eth "&#x00F0;">
+<!ENTITY ETH "&#x00D0;">
+<!ENTITY eacute "&#x00E9;">
+<!ENTITY Eacute "&#x00C9;">
+<!ENTITY ecirc "&#x00EA;">
+<!ENTITY Ecirc "&#x00CA;">
+<!ENTITY egrave "&#x00E8;">
+<!ENTITY Egrave "&#x00C8;">
+<!ENTITY euml "&#x00EB;">
+<!ENTITY Euml "&#x00CB;">
+<!ENTITY eumlacute "&#xE4CB;">
+<!ENTITY iacute "&#x00ED;">
+<!ENTITY Iacute "&#x00CD;">
+<!ENTITY icirc "&#x00EE;">
+<!ENTITY Icirc "&#x00CE;">
+<!ENTITY igrave "&#x00EC;">
+<!ENTITY Igrave "&#x00CC;">
+<!ENTITY iuml "&#x00EF;">
+<!ENTITY Iuml "&#x00CF;">
+<!ENTITY ntilde "&#x00F1;">
+<!ENTITY Ntilde "&#x00D1;">
+<!ENTITY oacute "&#x00F3;">
+<!ENTITY Oacute "&#x00D3;">
+<!ENTITY ocirc "&#x00F4;">
+<!ENTITY Ocirc "&#x00D4;">
+<!ENTITY ograve "&#x00F2;">
+<!ENTITY Ograve "&#x00D2;">
+<!ENTITY oslash "&#x00F8;">
+<!ENTITY Oslash "&#x00D8;">
+<!ENTITY otilde "&#x00F5;">
+<!ENTITY Otilde "&#x00D5;">
+<!ENTITY ouml "&#x00F6;">
+<!ENTITY Ouml "&#x00D6;">
+<!ENTITY szlig "&#x00DF;">
+<!ENTITY thorn "&#x00FE;">
+<!ENTITY THORN "&#x00DE;">
+<!ENTITY uacute "&#x00FA;">
+<!ENTITY Uacute "&#x00DA;">
+<!ENTITY ucirc "&#x00DB;">
+<!ENTITY Ucirc "&#x00FB;">
+<!ENTITY ucaron "&#x01D4;">
+<!ENTITY ugrave "&#x00F9;">
+<!ENTITY Ugrave "&#x00D9;">
+<!ENTITY uuml "&#x00FC;">
+<!ENTITY Uuml "&#x00DC;">
+<!ENTITY udot "&#xE715;">
+<!ENTITY vacute "&#xE73A;">
+<!ENTITY yacute "&#x00FD;">
+<!ENTITY Yacute "&#x00DD;">
+<!ENTITY yuml "&#x00FF;">
+<!ENTITY ydot "&#x1E8F;">
+<!ENTITY schwa "&#x0259;">
+<!ENTITY abreve "&#x0103;">
+<!ENTITY Abreve "&#x0102;">
+<!ENTITY adot "&#x0227;">
+<!ENTITY amacr "&#x0101;">
+<!ENTITY Amacr "&#x0100;">
+<!ENTITY amacrbreve "&#xE410;">
+<!ENTITY amacracute "&#xE40A;">
+<!ENTITY aogon "&#x0105;">
+<!ENTITY Aogon "&#x0104;">
+<!ENTITY Bdot "&#x1E02;">
+<!ENTITY bdot "&#x1E03;">
+<!ENTITY cacute "&#x0107;">
+<!ENTITY Cacute "&#x0106;">
+<!ENTITY ccaron "&#x010D;">
+<!ENTITY Ccaron "&#x010C;">
+<!ENTITY ccirc "&#x0109;">
+<!ENTITY Ccirc "&#x0108;">
+<!ENTITY cdot "&#x010B;">
+<!ENTITY Cdot "&#x010A;">
+<!ENTITY ccon "&#x0254;">
+<!ENTITY cmacr "&#xE455;">
+<!ENTITY dcaron "&#x010F;">
+<!ENTITY Dcaron "&#x010E;">
+<!ENTITY dstrok "&#x0111;">
+<!ENTITY Dstrok "&#x0110;">
+<!ENTITY ddot "&#x1E0B;">
+<!ENTITY ecaron "&#x011B;">
+<!ENTITY Ecaron "&#x011A;">
+<!ENTITY edot "&#x0117;">
+<!ENTITY Edot "&#x0116;">
+<!ENTITY emacr "&#x0113;">
+<!ENTITY Emacr "&#x0112;">
+<!ENTITY emacracute "&#x1E17;">
+<!ENTITY emacrbreve "&#xE4B7;">
+<!ENTITY ebrevebelow "&#xE4DD;">
+<!ENTITY ebreve "&#x0115;">
+<!ENTITY eogon "&#x0119;">
+<!ENTITY Eogon "&#x0118;">
+<!ENTITY eogonacute "&#xE499;">
+<!ENTITY ezh "&#x0292;">
+<!ENTITY Fdot "&#x1E1E;">
+<!ENTITY fdot "&#x1E1F;">
+<!ENTITY gacute "&#x01F5;">
+<!ENTITY gbreve "&#x011F;">
+<!ENTITY Gbreve "&#x011E;">
+<!ENTITY Gcedil "&#x0122;">
+<!ENTITY gcirc "&#x011D;">
+<!ENTITY Gcirc "&#x011C;">
+<!ENTITY Gdot "&#x0120;">
+<!ENTITY gdot "&#x0121;">
+<!ENTITY Gdot "&#x0120;">
+<!ENTITY gmacr "&#x1E21;">
+<!ENTITY hcirc "&#x0125;">
+<!ENTITY Hcirc "&#x0124;">
+<!ENTITY hstrok "&#x0127;">
+<!ENTITY Hstrok "&#x0126;">
+<!ENTITY Idot "&#x0130;">
+<!ENTITY Imacr "&#x012A;">
+<!ENTITY ibreve "&#x012D;">
+<!ENTITY imacr "&#x012B;">
+<!ENTITY imacracute "&#xE535;">
+<!ENTITY imacrbreve "&#xE537;">
+<!ENTITY ijlig "&#x0133;">
+<!ENTITY IJlig "&#x0132;">
+<!ENTITY inodot "&#x0131;">
+<!ENTITY iumlacute "&#x1E2F;">
+<!ENTITY iogon "&#x012F;">
+<!ENTITY Iogon "&#x012E;">
+<!ENTITY itilde "&#x0129;">
+<!ENTITY Itilde "&#x0128;">
+<!ENTITY ipunct "&#x1ECB;">
+<!ENTITY jcirc "&#x0135;">
+<!ENTITY Jcirc "&#x0134;">
+<!ENTITY kcedil "&#x0137;">
+<!ENTITY Kcedil "&#x0136;">
+<!ENTITY kgreen "&#x0138;">
+<!ENTITY lacute "&#x013A;">
+<!ENTITY Lacute "&#x0139;">
+<!ENTITY lcaron "&#x013E;">
+<!ENTITY Lcaron "&#x013D;">
+<!ENTITY lcedil "&#x013C;">
+<!ENTITY Lcedil "&#x013B;">
+<!ENTITY lmidot "&#x0140;">
+<!ENTITY Lmidot "&#x013F;">
+<!ENTITY ldot "&#x1E37;">
+<!ENTITY lstrok "&#x0142;">
+<!ENTITY Lstrok "&#x0141;">
+<!ENTITY lcircle "&#xE5A4;">
+<!ENTITY Mdot "&#x1E40;">
+<!ENTITY mdot "&#x1E41;">
+<!ENTITY mdotsub "&#x1E43;">
+<!ENTITY mmacr "&#x006D;">
+<!ENTITY nacute "&#x0144;">
+<!ENTITY Nacute "&#x0143;">
+<!ENTITY ndot "&#x1E45;">
+<!ENTITY ncircle "&#xE5EE;">
+<!ENTITY nmacr "&#xE5DC;">
+<!ENTITY eng "&#x014B;">
+<!ENTITY ENG "&#x014A;">
+<!ENTITY napos "&#x0149;">
+<!ENTITY ncaron "&#x0148;">
+<!ENTITY Ncaron "&#x0147;">
+<!ENTITY ncedil "&#x0146;">
+<!ENTITY Ncedil "&#x0145;">
+<!ENTITY obreve "&#x014F;">
+<!ENTITY odblac "&#x0151;">
+<!ENTITY Odblac "&#x0150;">
+<!ENTITY Omacr "&#x014C;">
+<!ENTITY omacr "&#x014D;">
+<!ENTITY omacracute "&#x1E53;">
+<!ENTITY omacrbreve "&#xE61B;">
+<!ENTITY oogon "&#x01EB;">
+<!ENTITY ocommabel "&#xE64C;">
+<!ENTITY oelig "&#x0153;">
+<!ENTITY OElig "&#x0152;">
+<!ENTITY Pdot "&#x1E56;">
+<!ENTITY pdot "&#x1E57;">
+<!ENTITY pstrok "&#xE670;">
+<!ENTITY pmacr "&#xE665;">
+<!ENTITY racute "&#x0155;">
+<!ENTITY Racute "&#x0154;">
+<!ENTITY rcaron "&#x0159;">
+<!ENTITY Rcaron "&#x0158;">
+<!ENTITY rcedil "&#x0157;">
+<!ENTITY Rcedil "&#x0156;">
+<!ENTITY rcircle "&#xE6A3;">
+<!ENTITY Rdot "&#x1E58;">
+<!ENTITY rdot "&#x1E59;">
+<!ENTITY rpunct "&#x1E5B;">
+<!ENTITY rmacr "&#xE696;">
+<!ENTITY sacute "&#x015B;">
+<!ENTITY Sacute "&#x015A;">
+<!ENTITY scaron "&#x0161;">
+<!ENTITY Scaron "&#x0160;">
+<!ENTITY scedil "&#x015F;">
+<!ENTITY Scedil "&#x015E;">
+<!ENTITY scirc "&#x015D;">
+<!ENTITY Scirc "&#x015C;">
+<!ENTITY Sdot "&#x1E60;">
+<!ENTITY sdot "&#x1E61;">
+<!ENTITY smacr "&#xE6B8;">
+<!ENTITY tcaron "&#x0165;">
+<!ENTITY Tcaron "&#x0164;">
+<!ENTITY tcedil "&#x0163;">
+<!ENTITY Tcedil "&#x0162;">
+<!ENTITY tstrok "&#x0167;">
+<!ENTITY Tstrok "&#x0166;">
+<!ENTITY tmacr "&#xE6E5;">
+<!ENTITY ubreve "&#x016D;">
+<!ENTITY Ubreve "&#x016C;">
+<!ENTITY udblac "&#x0171;">
+<!ENTITY Udblac "&#x0170;">
+<!ENTITY umacr "&#x016B;">
+<!ENTITY Umacr "&#x016A;">
+<!ENTITY umacrbreve "&#xE70B;">
+<!ENTITY uogon "&#x0173;">
+<!ENTITY Uogon "&#x0172;">
+<!ENTITY uring "&#x016F;">
+<!ENTITY Uring "&#x016E;">
+<!ENTITY utilde "&#x0169;">
+<!ENTITY Utilde "&#x0168;">
+<!ENTITY ubreve "&#x016D;">
+<!ENTITY ubrevebelow "&#xE727;">
+<!ENTITY wcirc "&#x0175;">
+<!ENTITY Wcirc "&#x0174;">
+<!ENTITY ycirc "&#x0177;">
+<!ENTITY Ycirc "&#x0176;">
+<!ENTITY Yuml "&#x0178;">
+<!ENTITY ymacr "&#x0233;">
+<!ENTITY ybreve "&#xE776;">
+<!ENTITY zacute "&#x017A;">
+<!ENTITY Zacute "&#x0179;">
+<!ENTITY zcaron "&#x017E;">
+<!ENTITY Zcaron "&#x017D;">
+<!ENTITY zdot "&#x017C;">
+<!ENTITY Zdot "&#x017B;">
+<!ENTITY ampersir "&#x0026;">
+<!ENTITY supo "&#x0366;">
+<!ENTITY half "&#x00BD;">
+<!ENTITY frac12 "&#x00BD;">
+<!ENTITY frac14 "&#x00BC;">
+<!ENTITY frac34 "&#x00BE;">
+<!ENTITY frac18 "&#x215B;">
+<!ENTITY frac38 "&#x215C;">
+<!ENTITY frac58 "&#x215D;">
+<!ENTITY frac78 "&#x215E;">
+<!ENTITY sup1 "&#x00B9;">
+<!ENTITY sup2 "&#x00B2;">
+<!ENTITY sup3 "&#x00B3;">
+<!ENTITY plus "&#x002B;">
+<!ENTITY plusmn "&#x00B1;">
+<!ENTITY equals "&#x003D;">
+<!ENTITY gt "&#x003E;">
+<!ENTITY less "&#x003C;">
+<!ENTITY divide "&#x00F7;">
+<!ENTITY times "&#x00D7;">
+<!ENTITY curren "&#x00A4;">
+<!ENTITY pound "&#x00A3;">
+<!ENTITY dollar "&#x0024;">
+<!ENTITY cent "&#x00A2;">
+<!ENTITY yen "&#x00A5;">
+<!ENTITY num "&#x0023;">
+<!ENTITY percnt "&#x0025;">
+<!ENTITY ast "&#x2217;">
+<!ENTITY commat "&#x0040;">
+<!ENTITY lsqb "&#x005B;">
+<!ENTITY bsol "&#x005C;">
+<!ENTITY rsqb "&#x005D;">
+<!ENTITY lcub "&#x007B;">
+<!ENTITY horbar "&#x2015;">
+<!ENTITY verbar "&#x007C;">
+<!ENTITY rcub "&#x007D;">
+<!ENTITY micro "&#x00B5;">
+<!ENTITY ohm "&#x2126;">
+<!ENTITY deg "&#x00B0;">
+<!ENTITY ordm "&#x00BA;">
+<!ENTITY ordf "&#x00AA;">
+<!ENTITY sect "&#x00A7;">
+<!ENTITY para "&#x00B6;">
+<!ENTITY middot "&#x00B7;">
+<!ENTITY larr "&#x2190;">
+<!ENTITY rarr "&#x2192;">
+<!ENTITY uarr "&#x2191;">
+<!ENTITY darr "&#x2193;">
+<!ENTITY copy "&#x00A9;">
+<!ENTITY reg "&#x00AF;">
+<!ENTITY trade "&#x2122;">
+<!ENTITY brvbar "&#x00A6;">
+<!ENTITY not "&#x00AC;">
+<!ENTITY sung "&#x2669;">
+<!ENTITY excl "&#x0021;">
+<!ENTITY iexcl "&#x00A1;">
+<!ENTITY quot "&#x0022;">
+<!ENTITY apos "&#x0027;">
+<!ENTITY lpar "&#x0028;">
+<!ENTITY rpar "&#x0029;">
+<!ENTITY comma "&#x002C;">
+<!ENTITY revcomma "&#x0314;">
+<!ENTITY ocus "&#x2510;">
+<!ENTITY lowbar "&#x005F;">
+<!ENTITY hyphen "&#xE4F8;">
+<!ENTITY period "&#x002E;">
+<!ENTITY sol "&#x002F;">
+<!ENTITY colon "&#x003A;">
+<!ENTITY semi "&#x003B;">
+<!ENTITY quest "&#x003F;">
+<!ENTITY iquest "&#x00BF;">
+<!ENTITY laquo "&#x00AB;">
+<!ENTITY raquo "&#x00BB;">
+<!ENTITY lsquo "&#x2018;">
+<!ENTITY rsquo "&#x2019;">
+<!ENTITY ldquo "&#x201C;">
+<!ENTITY rdquo "&#x201D;">
+<!ENTITY nbsp "&#x00A0;">
+<!ENTITY shy "&#x00AD;">
+<!ENTITY emsp "&#x2003;">
+<!ENTITY ensp "&#x2002;">
+<!ENTITY emsp13 "&#x2004;">
+<!ENTITY emsp14 "&#x2005;">
+<!ENTITY numsp "&#x2007;">
+<!ENTITY puncsp "&#x2008;">
+<!ENTITY thinsp "&#x2009;">
+<!ENTITY hairsp "&#x200A;">
+<!ENTITY mdash "&#x2014;">
+<!ENTITY ndash "&#x2013;">
+<!ENTITY dash "&#x2010;">
+<!ENTITY blank "&#x2423;">
+<!ENTITY hellip "&#x2026;">
+<!ENTITY nldr "&#x2025;">
+<!ENTITY frac13 "&#x2153;">
+<!ENTITY frac23 "&#x2154;">
+<!ENTITY frac15 "&#x2155;">
+<!ENTITY frac25 "&#x2156;">
+<!ENTITY frac35 "&#x2157;">
+<!ENTITY frac45 "&#x2158;">
+<!ENTITY frac16 "&#x2159;">
+<!ENTITY frac56 "&#x215A;">
+<!ENTITY fracnumer "&#x215F;">
+<!ENTITY incare "&#x2105;">
+<!ENTITY block "&#x2588;">
+<!ENTITY uhblk "&#x2580;">
+<!ENTITY lhblk "&#x2584;">
+<!ENTITY blk14 "&#x2591;">
+<!ENTITY blk12 "&#x2592;">
+<!ENTITY blk34 "&#x2593;">
+<!ENTITY marker "&#x25AE;">
+<!ENTITY cir "&#x25CB;">
+<!ENTITY squ "&#x25A1;">
+<!ENTITY rect "&#x25AD;">
+<!ENTITY utri "&#x25B5;">
+<!ENTITY dtri "&#x25BF;">
+<!ENTITY star "&#x22C6;">
+<!ENTITY bull "&#x2022;">
+<!ENTITY squf "&#x25AA;">
+<!ENTITY utrif "&#x25B4;">
+<!ENTITY dtrif "&#x25BE;">
+<!ENTITY ltrif "&#x25C2;">
+<!ENTITY rtrif "&#x25B8;">
+<!ENTITY clubs "&#x2663;">
+<!ENTITY diams "&#x2666;">
+<!ENTITY hearts "&#x2665;">
+<!ENTITY spades "&#x2660;">
+<!ENTITY malt "&#x2720;">
+<!ENTITY dagger "&#x2020;">
+<!ENTITY Dagger "&#x2021;">
+<!ENTITY check "&#x2713;">
+<!ENTITY cross "&#x2717;">
+<!ENTITY sharp "&#x266F;">
+<!ENTITY flat "&#x266D;">
+<!ENTITY male "&#x2642;">
+<!ENTITY female "&#x2640;">
+<!ENTITY phone "&#x260E;">
+<!ENTITY telrec "&#x2315;">
+<!ENTITY copysr "&#x2117;">
+<!ENTITY caret "&#x2041;">
+<!ENTITY lsquor "&#x201A;">
+<!ENTITY ldquor "&#x201E;">
+<!ENTITY fflig "&#xFB00;">
+<!ENTITY filig "&#xFB01;">
+<!ENTITY ffilig "&#xFB03;">
+<!ENTITY ffllig "&#xFB04;">
+<!ENTITY fllig "&#xFB02;">
+<!ENTITY mldr "&#x2026;">
+<!ENTITY rdquor "&#x201C;">
+<!ENTITY rsquor "&#x2018;">
+<!ENTITY vellip "&#x22EE;">
+<!ENTITY hybull "&#x2043;">
+<!ENTITY loz "&#x25CA;">
+<!ENTITY lozf "&#x2726;">
+<!ENTITY ltri "&#x25C3;">
+<!ENTITY rtri "&#x25B9;">
+<!ENTITY starf "&#x2605;">
+<!ENTITY natur "&#x266E;">
+<!ENTITY rx "&#x211E;">
+<!ENTITY sext "&#x2736;">
+<!ENTITY target "&#x2316;">
+<!ENTITY dlcrop "&#x230D;">
+<!ENTITY drcrop "&#x230C;">
+<!ENTITY ulcrop "&#x230F;">
+<!ENTITY urcrop "&#x230E;">
+<!ENTITY aleph "&#x2135;">
+<!ENTITY and "&#x2227;">
+<!ENTITY ang90 "&#x221F;">
+<!ENTITY angsph "&#x2222;">
+<!ENTITY ap "&#x2248;">
+<!ENTITY becaus "&#x2235;">
+<!ENTITY bottom "&#x22A5;">
+<!ENTITY cap "&#x2229;">
+<!ENTITY cong "&#x2245;">
+<!ENTITY conint "&#x222E;">
+<!ENTITY cup "&#x222A;">
+<!ENTITY equiv "&#x2261;">
+<!ENTITY exist "&#x2203;">
+<!ENTITY forall "&#x2200;">
+<!ENTITY fhook "&#x0192;">
+<!ENTITY ge "&#x2265;">
+<!ENTITY iff "&#xE365;">
+<!ENTITY infin "&#x221E;">
+<!ENTITY int "&#x222B;">
+<!ENTITY isin "&#x220A;">
+<!ENTITY lang "&#x3008;">
+<!ENTITY lArr "&#x21D0;">
+<!ENTITY le "&#x2264;">
+<!ENTITY minus "&#x2212;">
+<!ENTITY mnplus "&#x2213;">
+<!ENTITY nabla "&#x2207;">
+<!ENTITY ne "&#x2260;">
+<!ENTITY ni "&#x220D;">
+<!ENTITY or "&#x2228;">
+<!ENTITY par "&#x2225;">
+<!ENTITY part "&#x2202;">
+<!ENTITY permil "&#x2030;">
+<!ENTITY perp "&#x22A5;">
+<!ENTITY prime "&#x2032;">
+<!ENTITY Prime "&#x2033;">
+<!ENTITY prop "&#x221D;">
+<!ENTITY parallel "&#x01C1;">
+<!ENTITY radic "&#x221A;">
+<!ENTITY rang "&#x3009;">
+<!ENTITY rArr "&#x21D2;">
+<!ENTITY sim "&#x223C;">
+<!ENTITY sime "&#x2243;">
+<!ENTITY square "&#x25A1;">
+<!ENTITY sub "&#x2282;">
+<!ENTITY sube "&#x2286;">
+<!ENTITY sup "&#x2283;">
+<!ENTITY supn "&#x207F;">
+<!ENTITY supe "&#x2287;">
+<!ENTITY there4 "&#x2234;">
+<!ENTITY Verbar "&#x2016;">
+<!ENTITY angst "&#x212B;">
+<!ENTITY bernou "&#x212C;">
+<!ENTITY compfn "&#x2218;">
+<!ENTITY Dot "&#x0308;">
+<!ENTITY DotDot "&#x20DC;">
+<!ENTITY yogh "&#x021D;">
+<!ENTITY hamilt "&#x210B;">
+<!ENTITY lagran "&#x2112;">
+<!ENTITY lowast "&#x2217;">
+<!ENTITY notin "&#x2209;">
+<!ENTITY order "&#x2134;">
+<!ENTITY phmmat "&#x2133;">
+<!ENTITY tdot "&#x20DB;">
+<!ENTITY tprime "&#x2034;">
+<!ENTITY wedgeq "&#x2259;">
+<!ENTITY Alpha "&#x0391;">
+<!ENTITY Alphaton "&#x0386;">
+<!ENTITY Alphapsiacute "&#x1F0C;">
+<!ENTITY Beta "&#x0392;">
+<!ENTITY Gamma "&#x0393;">
+<!ENTITY Delta "&#x0394;">
+<!ENTITY Epsilon "&#x0395;">
+<!ENTITY Epsilonton "&#x0388;">
+<!ENTITY Epsilonpsi "&#x1F18;">
+<!ENTITY Etaton "&#x0389;">
+<!ENTITY Zeta "&#x0396;">
+<!ENTITY Eta "&#x0397;">
+<!ENTITY Theta "&#x0398;">
+<!ENTITY Iota "&#x0399;">
+<!ENTITY Iotaton "&#x038A;">
+<!ENTITY Kappa "&#x039A;">
+<!ENTITY Lambda "&#x039B;">
+<!ENTITY Mu "&#x039C;">
+<!ENTITY Nu "&#x039D;">
+<!ENTITY Xi "&#x039E;">
+<!ENTITY Omicron "&#x039F;">
+<!ENTITY Omicronton "&#x038C;">
+<!ENTITY Pi "&#x03A0;">
+<!ENTITY Rho "&#x03A1;">
+<!ENTITY Sigma "&#x03A3;">
+<!ENTITY Tau "&#x03A4;">
+<!ENTITY Upsilon "&#x03A5;">
+<!ENTITY Upsilonton "&#x038E;">
+<!ENTITY Phi "&#x03A6;">
+<!ENTITY Chi "&#x03A7;">
+<!ENTITY Psi "&#x03A8;">
+<!ENTITY Omega "&#x03A9;">
+<!ENTITY Omegaton "&#x038F;">
+<!ENTITY Iotauml "&#x03AA;">
+<!ENTITY Upsilonuml "&#x03AB;">
+<!ENTITY alpha "&#x03B1;">
+<!ENTITY alpha "&#x1F01;">
+<!ENTITY alphaacute "&#x1F71;">
+<!ENTITY alphaperis "&#x1FB6;">
+<!ENTITY alphapsiacute "&#x1F04;">
+<!ENTITY alphaton "&#x03AC;">
+<!ENTITY alphapsigrave "&#x1F02;">
+<!ENTITY alphadasacute "&#x1F05;">
+<!ENTITY alphadasgrave "&#x1F03;">
+<!ENTITY alphagrave "&#x1F70;">
+<!ENTITY alphapsi "&#x1F00;">
+<!ENTITY alphaypo "&#x1FB3;">
+<!ENTITY alpha3 "&#x1F84;">
+<!ENTITY alphainvbreve "&#xEB0E;">
+<!ENTITY epsilon "&#x03B5;">
+<!ENTITY epsilonacute "&#x1F73;">
+<!ENTITY epsilondas "&#x1F11;">
+<!ENTITY epsilonpsi "&#x1F10;">
+<!ENTITY epsilonton "&#x03AD;">
+<!ENTITY epsilonpsiacute "&#x1F14;">
+<!ENTITY epsilondasacute "&#x1F15;">
+<!ENTITY epsilongrave "&#x1F72;">
+<!ENTITY eta "&#x03B7;">
+<!ENTITY etaacute "&#x1F75;">
+<!ENTITY etainvbreve "&#xEB2F;">
+<!ENTITY etaton "&#x03AE;">
+<!ENTITY etagrave "&#x1F74;">
+<!ENTITY etadas "&#x1F21;">
+<!ENTITY etapsi "&#x1F20;">
+<!ENTITY iota "&#x03B9;">
+<!ENTITY iotaacute "&#x1F77;">
+<!ENTITY iotauml "&#x03CA;">
+<!ENTITY iotaumlton "&#x0390;">
+<!ENTITY iotainvbreve "&#xEB49;">
+<!ENTITY iotagrave "&#x1F76;">
+<!ENTITY iotapsiacute "&#x1F34;">
+<!ENTITY iotadasacute "&#x1F35;">
+<!ENTITY iotadasperis "&#x1F37;">
+<!ENTITY iotapsiperis "&#x1F36;">
+<!ENTITY iotapsi "&#x1F30;">
+<!ENTITY iotadas "&#x1F31;">
+<!ENTITY iotaperis "&#x1FD6;">
+<!ENTITY omega "&#x03C9;">
+<!ENTITY omegaton "&#x03CE;">
+<!ENTITY omegapsi "&#x1F60;">
+<!ENTITY omegapsiperis "&#x1F66;">
+<!ENTITY omegagrave "&#x1F7C;">
+<!ENTITY omegaacute "&#x1F7D;">
+<!ENTITY omegadas "&#x1F61;">
+<!ENTITY omegainvbreve "&#xEB92;">
+<!ENTITY omegaperis "&#x1FF6;">
+<!ENTITY omegaypo "&#x1FF3;">
+<!ENTITY upsilon "&#x03C5;">
+<!ENTITY upsilonperis "&#x1FE6;">
+<!ENTITY upsilonuml "&#x03CB;">
+<!ENTITY upsilonton "&#x03CD;">
+<!ENTITY upsilongrave "&#x1F7A;">
+<!ENTITY upsilonacute "&#x1F7B;">
+<!ENTITY upsiloninvbreve "&#xEB86;">
+<!ENTITY upsilonpsiacute "&#x1F54;">
+<!ENTITY upsilonpsigrave "&#x1F52;">
+<!ENTITY upsilondasacute "&#x1F55;">
+<!ENTITY upsilondasgrave "&#x1F53;">
+<!ENTITY upsilonpsi "&#x1F50;">
+<!ENTITY upsilondas "&#x1F51;">
+<!ENTITY upsilondasperis "&#x1F57;">
+<!ENTITY upsilonpsiperis "&#x1F56;">
+<!ENTITY omicron "&#x03BF;">
+<!ENTITY omicronacute "&#x1F79;">
+<!ENTITY omicronton "&#x03CC;">
+<!ENTITY omicrongrave "&#x1F78;">
+<!ENTITY omicronpsiacute "&#x1F44;">
+<!ENTITY omicrondasacute "&#x1F45;">
+<!ENTITY omicronpsi "&#x1F40;">
+<!ENTITY omicrondas "&#x1F41;">
+<!ENTITY omicroninvbreve "&#x020F;">
+<!ENTITY beta "&#x03B2;">
+<!ENTITY gamma "&#x03B3;">
+<!ENTITY delta "&#x03B4;">
+<!ENTITY zeta "&#x03B6;">
+<!ENTITY theta "&#x03B8;">
+<!ENTITY kappa "&#x03BA;">
+<!ENTITY lambda "&#x03BB;">
+<!ENTITY mu "&#x03BC;">
+<!ENTITY nu "&#x03BD;">
+<!ENTITY xi "&#x03BE;">
+<!ENTITY rho "&#x03C1;">
+<!ENTITY rhopsi "&#x1FE4;">
+<!ENTITY rhodas "&#x1FE5;">
+<!ENTITY sigmafin "&#x03C2;">
+<!ENTITY pi "&#x03C0;">
+<!ENTITY sigma "&#x03C3;">
+<!ENTITY tau "&#x03C4;">
+<!ENTITY phi "&#x03C6;">
+<!ENTITY chi "&#x03C7;">
+<!ENTITY psi "&#x03C8;">
+<!ENTITY perispom "&#x0342;">
+<!ENTITY koronis "&#x0343;">
+<!ENTITY ypogeg "&#x0345;">
+<!ENTITY iotaton "&#x03AF;">
+<!ENTITY vertbrace "&#xFE38;">
+<!ENTITY dotabove "&#x0307;">
