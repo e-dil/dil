@@ -1,0 +1,45 @@
+- title 'Search'
+
+%h2= "Search Results for: #{params[:q]}"
+
+= will_paginate @results
+
+%form
+  %fieldset
+    %label Order
+    %select
+      %option Alphabetical
+  %fieldset
+    %label Search within
+    %select
+      %option Terms
+      %option Definitions
+      
+%table.results
+  %tbody
+    - for result in @results   
+      - for orth in result.orths
+        %tr
+          %td.term
+            - if result.orths.size > 1
+              %h4= "#{orth.position} #{result.name}"
+            - else 
+              %h4= results.name
+            %p.location= "#{orth.head} #{orth.column}.#{orth.line}"
+            %p= link_to 'View Column', orth.entry
+            - result.orths.each do |orth|
+              - next if orth.entry.nil?
+              - orth.entry.overs.each do |o|
+                = o.name
+              
+          %td.def
+            - e = orth.entry
+            - unless e.nil? 
+              - if e.eg_forms.size > 10
+                - 0.upto(10) do |i| 
+                  - eg = e.eg_forms[i]
+                  %p= highlight(eg.text[0..100], params[:q])
+                %p.more= link_to "+ #{orth.entry.eg_forms.size - 10} more", orth.entry
+              - else
+                - e.eg_forms.each do |eg|
+                  %p=   eg.text

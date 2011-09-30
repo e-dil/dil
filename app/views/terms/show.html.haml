@@ -1,0 +1,16 @@
+- title @term.name
+
+%h1= @term.name.titleize
+
+#browse
+  %h2 Browse
+  = will_paginate
+  %ul
+    - for term in @terms
+      %li= link_to term.name, term
+  = will_paginate
+
+#definitions
+  %h2 Definitions
+  - for definition in @term.definitions
+    %p= definition.text

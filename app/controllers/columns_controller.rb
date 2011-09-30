@@ -1,0 +1,2 @@
+class ColumnsController < ApplicationController
+end

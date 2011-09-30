@@ -1,0 +1,84 @@
+/*
+*= require_self
+*= require_tree .
+*/
+
+#browse { border:1px solid #CCC; float:left; width:30em; }
+#browse ul { list-style:none; }
+#browse ul li { border-bottom:1px solid #CCC; padding:0.5em; }
+
+#definitions { border:1px solid #CCC; margin:0 0 0 1em; float:left; line-height:1.6em; padding:1em; width:50em; }
+
+.pagination { border-bottom:1px solid #CCC; overflow:auto; }
+.pagination em, 
+.pagination span, 
+.pagination a { border-right:1px solid #CCC; float:left; font-weight:bold; font-style:normal; padding:0.4em; }
+.pagination a { color:#000; text-decoration:none; }
+.pagination a:hover { background:#CCC; color:#000; }
+
+#toolbar { background:#DDD; border:1px solid #BBB; margin:0 0 1em 0; overflow:auto; }
+#toolbar a { color:#000; float:left; padding:0.5em; text-decoration:none; }
+#toolbar .columns {  }
+#toolbar .columns p { float:left; font-weight:bold; padding:0.5em; }
+#toolbar .columns a { margin:0 1px 0 0; }
+#toolbar form#jump { float:right; }
+#toolbar form#jump input[type=text] { border:1px solid #222; width:3em; }
+
+#headlist { border:1px solid #CCC; float:left; }
+#headlist .letter { border-bottom:1px solid #CCC; overflow:auto; width:12em; }
+#headlist .letter:nth-child(2n) { background:#EEE; }
+#headlist .letter > * { float:left; }
+#headlist .letter h2 { margin:0 1em 0 0; padding:0 1em; text-align:right; }
+#headlist .letter h2 a { color:#666; font-size:2em; text-decoration:none; }
+#headlist .letter p { margin:1em 0 0 0; }
+#headlist .letter:hover { background:#069; color:#FFF; }
+#headlist .letter:hover * { color:#DDD; }
+
+#columns {  }
+.column { border:1px solid #CCC; margin:0 0 1em 0; padding:0 0 0 3em; width:20em; }
+#colbox { float:left; margin:0 1em 0 0; position:relative; }
+#colbox h2 { background:#EEE; float:left; font-size:1em; font-weight:bold; letter-spacing:0.1em; padding:1em; text-transform:uppercase; width:36em; margin:2px;}
+#colbox a.popout { background:#069; color:#FFF; padding:0.5em; text-transform:uppercase; text-decoration:none; position:absolute; top:1em; right:1em;}
+.column .entry li { color:#333; clear:both; border:1px solid #EEE; border-width:0 0 1px 1px; padding:0.25em; }
+.column .entry li:hover { color:#333; }
+.column .entry li:empty { display:none; }
+.column .entry li > * { color:#000; display:inline; }
+.column .entry li p { display:inline; }
+ orth { font-weight:bold; display:inline; margin:1em 0; }
+ ref { color:#069; text-decoration:underline; }
+ trans { color:#093; font-weight:bold; }
+ lbl { font-style:italic; }
+ pos { color:#F90; }
+ xref { color:#309; font-weight:bold; }
+ form { color:#000; }
+ bibl { color:#069 !important; }
+ biblScope { display:non; }
+ title { background:#DDB; color:#069; display:inline; }
+
+#toc { border:1px solid #CCC; float:left; width:9em;}
+#toc a { border-bottom:1px solid #CCC; color:#069; display:block; padding:0.5em 0; }
+#toc a:nth-child(2n) { background:#EEE; }
+
+.highlight { background:rgba(255,255,230, 0.7); color:#000; font-weight:bold; text-shadow:0 1px 1px #FFF; }
+
+th { vertical-align:top; padding:1em; }
+tr:nth-child(2n) { background:#EEE; }
+
+a.next { background:url("/images/icons/arrow.png") 0.5em 50% no-repeat !important; padding-left:2em !important; }
+a.prev { background:url("/images/icons/arrow-180.png") 0.5em 50% no-repeat !important; padding-left:2em !important; }
+a.popout { background:url("/images/icons/blue-document--arrow.png") 0.5em 50% no-repeat !important; padding-left:2em !important; text-indent:-9999px; }
+
+form#jump { float:right; }
+
+table.results { width:100%; }
+table.results th { background:#333; color:#FFF; text-align:left; }
+table.results td { border:1px solid #DDD; }
+table.results .term { width:12em; }
+table.results .header { background:#555; color:#FFF; }
+table.results .header h3 { font-size:1.3em; }
+table.results .term h4 {  }
+table.results .def p { margin:0 0 1em 0; }
+table.results .def .more { float:right; }
+table.results dl { clear:both; overflow:auto; width:14em;}
+table.results dl dt { clear:left; float:left; font-weight:bold; width:5em; }
+table.results dl dd { clear:right; float:left; }

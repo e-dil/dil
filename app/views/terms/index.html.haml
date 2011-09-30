@@ -1,0 +1,8 @@
+- title 'Browse'
+
+#browse
+  = will_paginate
+  %ul
+    - for term in @terms
+      %li= link_to term.name, term
+  = will_paginate

@@ -1,0 +1,23 @@
+- title 'Browse'
+
+#toolbar 
+  .columns
+    %p Pages: 
+    = link_to 'Previous', '?col=' + (params[:col].to_i - 2).to_s , :class => :prev
+    = link_to 'Next', '?col=' + (params[:col].to_i + 2).to_s, :class => :next
+  %a.print Print
+  %a.reveal Reveal
+  %form#jump
+    %label 
+      %span Jump to Column
+      -# heads = A..D
+      %select
+        %option A
+      %input{:type => :text, :name => :col}
+    %input{:type => :submit, :value => 'Go'}
+
+#toc
+
+#columns 
+  = render :partial => 'column', :locals => {:column => @col}
+  = render :partial => 'column', :locals => {:column => @next_col}

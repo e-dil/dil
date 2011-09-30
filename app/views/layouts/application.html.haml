@@ -1,0 +1,38 @@
+!!! 5
+%html
+  %head
+    %title DIL | Dictionary of the Irish Language
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+  %body
+    #site
+      %nav#primary
+        = link_to 'Home', '/home'
+        = link_to 'Browse', browse_url
+        = link_to 'Search', advanced_url
+        = link_to 'Bibliography', root_url
+        = link_to 'About', '/about'
+        = link_to 'Help', '/help'
+      %header
+        %h1= "Electronic Dictionary of the Irish Language: #{yield :title}"
+        = form_tag(search_url, :id => :search) do
+          %fieldset
+            = select_tag :language, options_for_select(['Irish', 'English'])
+            %input{:type => :search, :name => :q, :placeholder => 'Quick Search', :value => params[:q]}
+            = submit_tag 'Go'
+      #main{:role => :main}
+        = yield
+      %footer
+        = image_tag 'qub_logo.gif', :class => :logo
+        = image_tag 'ahrc_logo.gif', :class => :logo
+        %p.contact 
+          Contact Editor:
+          %a{:href => 'mailto:g.toner@qub.ac.uk'} Gregory Toner   
+        %p.copyright= raw "Copyright &copy; #{Time.now.year} <a href=\"http://www.qub.ac.uk\">Queen's University, Belfast</a>.  All Rights Reserved."
+        .license
+          %a{:rel => :license, :href => "http://creativecommons.org/licenses/by-nc-nd/3.0/"}
+            = image_tag 'http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png', :alt => 'Creative Commons License'
+          %p
+            This work is licensed under a 
+            = link_to 'Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License', "http://creativecommons.org/licenses/by-nc-nd/3.0/", :rel => :license
+        %p.terms= link_to 'Terms and Conditions', ''

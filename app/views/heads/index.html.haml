@@ -1,0 +1,19 @@
+- title 'Browse'
+
+%form#jump{}
+  %fieldset
+    %legend Jump to
+    %label
+      %span Letter
+      %select
+        - for letter in Head.all.map(&:letter)
+          %option= letter
+    %label 
+      %span Column
+      %input{:type => :text}
+
+#headlist
+  - @heads.each do |h|
+    .letter
+      %h2= link_to h.letter[0].upcase, head_entries_url(h, :col => 1)
+      %p.count= "#{h.entries.count} Terms"

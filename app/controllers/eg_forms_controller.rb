@@ -1,0 +1,2 @@
+class EgFormsController < ApplicationController
+end

@@ -1,0 +1,39 @@
+- title 'Search Results'
+
+%h2= "Search Term: '#{params[:q]}'"
+
+- unless @exact_terms.empty?
+  %h3 Exact Matches
+  %h3.hits= "Total Hits: #{@exact_terms.count}" 
+
+  %table 
+    %tbody
+      - @exact_terms.each_with_index do |term, i|
+        %tr
+          %th= i + 1
+          %td
+            %h3= highlight term.name, params[:q]
+            %p Keywords
+
+          %td
+            - for definition in term.definitions
+              %p= highlight definition.text.encode("UTF-8"), params[:q]
+%h3 All Matches
+
+%table 
+  %tbody
+    - @terms.each_with_index do |term, i|
+      %tr
+        %th= i + 1
+        %td
+          %h3= highlight term.name, params[:q]
+          %p Keywords
+          %p 
+            Line:
+            = link_to 'x', ''
+          %p 
+            Column: 
+            = link_to 'x', ''
+        %td
+          - for definition in term.definitions
+            %p=raw highlight(definition.text, params[:q].encode('ASCII-8BIT'))

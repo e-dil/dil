@@ -1,0 +1,2 @@
+class OversController < ApplicationController
+end

@@ -1,0 +1,172 @@
+Dictionary of the Irish Language
+================================
+
+PROBLEMS
+========
+
+Milestones
+----------
+
+
+MODELS
+======
+
+Entries
+-------
+Entries are containers for Terms and the Definitions, plus some additional 
+metadata to make entries easier to find (such as their English translations, 
+or equivalent words in Irish).
+
+* Entries always belong to a Letter.  
+* The first letter of an Entry's headword is normally, but not always the
+* Entries have many Definitions (EgForms).
+* Entries have many Keywords (oVar)
+* Entries have many Translations (trans)
+* Entries have a start Position and an end Position.
+
+Letter
+------
+Letters are the chapters that the dictionary is divided into.  Generally each 
+letter has a corresponding XML file comtaining entries, although larger 
+chapters, such as 'D', will be split into more than one file.
+
+Headword
+--------
+* see http://en.wikipedia.org/wiki/Headword.
+
+A headword is the word under which a set of Entries appear.  For our purposes, 
+it simply describes a term that is being used to 
+
+Position
+--------
+A position is a coordinate reference within the dictionary.  It has:
+
+* A Line
+* A Column
+* A Letter
+
+-------------------------------------------------------------------------------
+
+FEATURES
+========
+
+Search
+======
+
+Advanced Search
+---------------
+
+Virtual Accent Keyboard
+-----------------------
+áéíóúėṁṅṡḟÁÉÍÓÚèṀňṠḞăěǐǒǔàġďščāēīōūåýťǽċäëïöüựÿœæ†
+
+Clear Search
+
+Disjunctive Search  
+ 
+Grammatical Features 
+====================
+
+
+Part of speech
+--------------
+Encoded by using empty 'pos' tags within egForm.  
+Would preferably be an attribute on egForm.  
+The pos element has a single required attribute, value.
+
+'adj' 'adjective'
+'adv' 'adverb'
+'conj'  'conjunction'
+'interj''interjection'
+'interr''interrogation'
+'n'   'noun'
+'num' 'numeral'
+'part'  'particle'
+'pastp' 'past participle'
+'pref'  'prefix'
+'prep'  'preposition'
+'pro' 'pronoun'
+'vb'  'verb'
+'vbl' 'verbal of necessity'
+
+Stem
+----  
+'a'   'a (long)'
+'d'   'd'
+'g'   'g'
+'i'   'i (long)'
+'i'   'i (short)'
+'ia'  'ia'
+'io'  'io'
+'io-ia' 'io-ia'
+'k'   'k'
+'n'   'n'
+'nk'  'nk'
+'nt'  'nt'
+'o'   'o'
+'o-a' 'o-a'
+'r'   'r'
+'s'   's'
+'u'   'u'
+
+Gender
+------ 
+Another empty tag within egForm.  However, it does not use 'value' attribute (reason unknown). 
+Would preferably be moved to an attribute on egForm.
+
+'f' 'fem'
+'n' 'neut'
+'m' 'masc'
+
+Case
+----
+Another empty tag within egForm.  However, it does not use 'value' attribute (reason unknown). 
+Would preferably be moved to an attribute on egForm.
+
+'now' 'nom'
+'voc' 'voc'
+'gen' 'gen'
+'acc' 'acc'
+'dat' 'dat'
+
+Degrees of comparison 
+---------------------
+'equat'   'equat'
+'compar'  'compar'
+'superl'  'superl'
+
+Mood
+----
+'ind' 'indicative'
+'subj'  'subjunctive'
+'sg'  'iussive'
+'ipv' 'imperative'
+'con' 'conditional'
+
+Tense
+-----
+'pres'  'present'
+'past'  'past'
+'perf'  'perfect'
+'fut' 'future'
+'impf'  'imperfect'
+'pret'  'preterite'
+
+Voice
+----- 
+active
+passive
+
+Person  
+------
+first
+second
+third
+
+Number
+------
+singular
+plural
+dual 
+
+FIELDED OPTIONS

@@ -1,0 +1,8 @@
+#colbox
+  %h2= "Letter #{@head.letter}, Column #{params[:col]}"
+  = link_to 'Pop-out', '', :class => 'popout', :class => :popout
+  %ol.column
+    - column.each do |entry|
+      .entry
+        - entry.text.split(/<br\ column="\d+"\ line="\d+">/).each do |line|
+          %li= raw Nokogiri::XML::DocumentFragment.parse(line)
