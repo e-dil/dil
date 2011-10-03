@@ -1,4 +1,4 @@
-class HeadsController < InheritedResources::Base
+class HeadsController < ApplicationController
   def index
     @heads = Head.order(:letter)
   end

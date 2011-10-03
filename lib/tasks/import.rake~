@@ -1,0 +1,56 @@
+%w[rubygems nokogiri].each{|x| require x}
+
+namespace :admin do
+  desc "Import XML"
+  task(:import => :environment) do
+    # Stage 1: Build Entries, Term, Definitions, Keywords and Translations
+    puts 'Deleting existing entries.'
+    [Entry, Term, Word, Definition].map(&:delete_all)
+#Dir['xml/*.xml'].sort.each do |filename|
+      filename = 'xml/G.xml'
+      doc = Nokogiri(File.open(filename,'r'))
+
+      # All entries belong to a Letter.  There should be only one Letter per
+      # XML file, but one Letter may be split across multiple files, e.g. 'D'.
+      letter = Letter.find_or_create_by_name(doc.css('head').text[0])
+
+      # Each letter file contains lots of entries. 
+      doc.css('entry').each do |entry|
+	e = Entry.create(:letter => letter)
+
+        # Each entry has one or more orths
+	entry.css('orth').each do |w|
+      	  term_text = entry.css('orth').text
+          m = term_text.match(/^(\d+) (.+)$/) 
+          
+          if m.nil?
+	    term = Term.find_or_create_by_name(term_text)
+	    if term.word.nil? then
+              term.update_attribute(:word, Word.create(:name => term_text))
+	    end
+	  else
+	    term = Term.find_or_create_by_name(term_text) # position => m[1]
+	    if term.word.nil? then
+              term.update_attribute(:word, Word.create(:name => m[2]))
+	    end
+	  end
+          e.terms << term
+        end
+
+        # tags that make up the entry definition
+        entry.css('sense, eg, egform').each do |d|       
+          e.definitions << Definition.create(:text => d.inner_html, :kind => d.name)
+	end
+	e.save
+      end
+#end
+  end
+  
+  desc "Import XML"
+  task(:split => :environment) do
+    Definition.all.each do |d| 
+      d.text.gsub!(/<br.+>/, '')
+      d.save
+    end
+  end
+end

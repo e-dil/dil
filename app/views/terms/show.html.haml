@@ -1,16 +1,20 @@
-- title @term.name
+- title @term.name.titleize
 
-%h1= @term.name.titleize
-
-#browse
-  %h2 Browse
-  = will_paginate
-  %ul
-    - for term in @terms
-      %li= link_to term.name, term
-  = will_paginate
 
 #definitions
   %h2 Definitions
-  - for definition in @term.definitions
-    %p= definition.text
+  - for definition in @term.entry.definitions
+    .definition{:class => definition.kind}
+      .bibliography
+        %h3 Bibliography
+        %ul
+          - for b in definition.bibls.group(:title)
+            %li= "#{b.title}, #{b.scope}"
+      .translations
+        %h3 Translations
+        %ul
+          - for b in definition.translations
+            %li= b.name
+      .transcript
+        %h3 Transcript
+        .text= raw definition.text

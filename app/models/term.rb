@@ -1,4 +1,4 @@
 class Term < ActiveRecord::Base
-  has_many :definitions
-  has_many :orths
+  belongs_to :word
+  belongs_to :entry
 end

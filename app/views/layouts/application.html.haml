@@ -6,13 +6,6 @@
     = javascript_include_tag 'application'
   %body
     #site
-      %nav#primary
-        = link_to 'Home', '/home'
-        = link_to 'Browse', browse_url
-        = link_to 'Search', advanced_url
-        = link_to 'Bibliography', root_url
-        = link_to 'About', '/about'
-        = link_to 'Help', '/help'
       %header
         %h1= "Electronic Dictionary of the Irish Language: #{yield :title}"
         = form_tag(search_url, :id => :search) do
@@ -20,6 +13,13 @@
             = select_tag :language, options_for_select(['Irish', 'English'])
             %input{:type => :search, :name => :q, :placeholder => 'Quick Search', :value => params[:q]}
             = submit_tag 'Go'
+      %nav#primary
+        = link_to 'Home', '/home'
+        = link_to 'Browse', browse_url
+        = link_to 'Search', advanced_url
+        = link_to 'Bibliography', root_url
+        = link_to 'About', '/about'
+        = link_to 'Help', '/help'
       #main{:role => :main}
         = yield
       %footer

@@ -1,6 +1,9 @@
-class EntriesController < InheritedResources::Base
+class EntriesController < ApplicationController 
   def index
-    @head = Head.find(params[:head_id])
+    # Always browse entries in the context of a head.
+    redirect_to head_entries_url(Head.first) if params[:head].nil?
+    
+    @head = Head.find(params[:head_id]) 
     @entries = @head.entries
     col       = params[:col].to_i
     @col      = Entry.get_column(@head.id, col)

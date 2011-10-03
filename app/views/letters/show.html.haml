@@ -1,0 +1,10 @@
+- title @letter.name
+
+%p
+  There are 
+  = @letter.entries.size
+  entries for the letter
+  = @letter.name
+
+- for word in @letter.words.group(:id)
+  %li= link_to "#{word.name}" # (#{word.entry.definitions.size})", word
