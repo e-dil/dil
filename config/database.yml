@@ -1,9 +1,10 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
-  encoding: utf-8
+  adapter: mysql
+  database: dil
+  username: root
+  password: 
+  host: localhost 
+  encoding: utf8
 
 test:
   adapter: sqlite3

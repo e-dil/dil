@@ -16,6 +16,10 @@ $(document).ready(function(){
 	    var o = $(this);
 	    o.click(function(){ window.location = "/search?q=" + o.attr("target"); });
 	});
+	$("ovar").each(function(i){
+	    var o = $(this);
+	    o.click(function(){ window.location = "/search?q=" + o.text(); });
+	});
 
 	$("title").each(function(i){
 	    var o = $(this);

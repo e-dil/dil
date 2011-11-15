@@ -1,4 +1,6 @@
 - title 'Browse By Letter'
 
 - for letter in @letters
-  %li= link_to letter.name, letter
+  .letter
+    %h3= link_to letter.name, letter
+    %p= "#{letter.words.size} Entries"

@@ -4,10 +4,11 @@
     %title DIL | Dictionary of the Irish Language
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
   %body
     #site
       %header
-        %h1= "Electronic Dictionary of the Irish Language: #{yield :title}"
+        %h1= "Dictionary of the Irish Language: #{yield :title}"
         = form_tag(search_url, :id => :search) do
           %fieldset
             = select_tag :language, options_for_select(['Irish', 'English'])
@@ -16,7 +17,7 @@
       %nav#primary
         = link_to 'Home', '/home'
         = link_to 'Browse', browse_url
-        = link_to 'Search', advanced_url
+        =# link_to 'Search', advanced_url
         = link_to 'Bibliography', root_url
         = link_to 'About', '/about'
         = link_to 'Help', '/help'

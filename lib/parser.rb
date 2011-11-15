@@ -1,26 +1,12 @@
 #! /usr/bin/env ruby
 
-require 'rubygems'
-require 'nokogiri'
+%w[rubygems nokogiri].each{|x| require x}
 
-class DilParser < Nokogiri::XML::SAX::Document
-  @stack = []
-
-  def start_element(name, a = [])
-    @stack.push {name => a}
-  end
-
-  def characters(s)
-    case @tag
-      
-    end
-  end
-
-  def end_element(name)
-    @stack.pop
-  end
+r = Nokogiri::XML::Reader(File.open('./xml/G.xml', 'r'))
+begin
+  r.each do |node|
+    puts node.name
+  end 
+rescue => e
+  puts e.inspect
 end
-
-f = File.open('./xml/G.xml', 'r')
-p = Nokogiri::XML::SAX::Parser.new(DilParser.new)
-p.parse(f)

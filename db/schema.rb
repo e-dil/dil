@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111003023118) do
+ActiveRecord::Schema.define(:version => 20111114112231) do
 
   create_table "bibls", :force => true do |t|
     t.integer  "definition_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20111003023118) do
     t.text     "text"
     t.string   "kind"
     t.integer  "entry_id"
+    t.integer  "part_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "part_of_speech_id"
@@ -43,6 +44,12 @@ ActiveRecord::Schema.define(:version => 20111003023118) do
     t.datetime "updated_at"
   end
 
+  create_table "part", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "part_of_speeches", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -55,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20111003023118) do
     t.integer  "entry_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "translations", :force => true do |t|

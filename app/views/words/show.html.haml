@@ -1,0 +1,7 @@
+- title @word.name
+
+- for term in @word.terms
+  %h3.term= term.name
+  - for definition in term.entry.definitions
+    .definition
+      = raw definition.text

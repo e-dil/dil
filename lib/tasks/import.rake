@@ -1,50 +1,49 @@
-%w[rubygems nokogiri].each{|x| require x}
-
 namespace :admin do
   desc "Import XML"
   task(:import => :environment) do
-    # Stage 1: Build Entries, Term, Definitions, Keywords and Translations
-    [Entry].map(&:delete_all)
-    Dir['xml/*.xml'].sort.each do |filename|
-      filename = 'xml/G.xml'
-      doc = Nokogiri(File.open(filename,'r'))
-      doc.css('entry').each do |entry|
-        e = Entry.new
-        e.orth = Orth.find_by_name(entry.css('orth').text)
-        entry.css('egform').each {|eg| e.eg_forms << EgForm.create(:text => eg.inner_html)}
-        #entry.css('eg').each {|eg| e.eg_forms << EgForm.create(:text => eg.inner_html)}
-        entry.css('oVar').each {|o| e.overs << Over.create(:name => o.text)} 
-        # ref
-        e.save
-      end
-    end
-  end
+    # Stage 1: 
+    # Build Entries, Term, Definitions, Keywords and Translations
+    
+    puts 'Deleting existing entries.'
+    $redis.flushall
+    [Definition, Letter, Entry, Term, Word].map(&:delete_all)
 
-  desc "Import Orth Tags"
-  task(:orth => :environment) do
-    Orth.delete_all
+    puts 'Mining XML Documents'
     Dir['xml/*.xml'].sort.each do |filename|
-      File.open(filename, 'r').each do |line|
-        begin
-          m = line.match(/orth xml:id="([\d\w\s\(\)]+)"/)
-          p = line.match(/(\d+)/)
-          Orth.create(:name => m[1], :column => p[1], :line => p[2], :head => filename[4])
-        rescue
+      puts "Opening: #{filename}."
+      doc = Nokogiri(File.open(filename,'r'))
+
+      # All entries belong to a Letter.  There should be only one Letter per
+      # XML file, but one Letter may be split across multiple files, e.g. 'D'.
+      head = doc.css('orth').first.text.chr.upcase
+      letter = Letter.find_or_create_by_name(head)
+
+      # Each letter file contains lots of entries. 
+      doc.css('entry').each do |entry|
+        e = Entry.create(:letter => letter)
+
+        # Each entry has one or more orths
+        # A word can have many terms, a word is like an orth
+        # a term is like the root of an orth
+        entry.css('orth').each do |w|
+          term_text = entry.css('orth').text
+          t = Term.find_or_create_by_name(term_text)
+          m = term_text.match(/^(\d+) (.+)$/) 
+          if m.nil? then
+            t.word = Word.find_or_create_by_name(t.name)
+          else
+            t.word = Word.find_or_create_by_name(m[2])
+            t.position = m[1]
+          end
+          t.save
+          e.terms << t
+        end
+
+        # tags that make up the entry definition
+        entry.css('sense, eg, egform').each do |d|       
+          e.definitions << Definition.create(:text => d.inner_html, :kind => d.name)
         end
       end
-    end
-  end
-
-  desc "Import Orth Tags"
-  task(:termify => :environment) do
-    Term.delete_all
-    Orth.all.each do |o|
-      m = o.name.match(/^(\d+) (.+)/)
-      next if m.nil?
-      t = Term.find_or_create_by_name(m[2])
-      o.position = m[1].to_i
-      o.term = t
-      o.save
     end
   end
 end

@@ -1,0 +1,5 @@
+- title "Results for: #{params[:q]}"
+
+%ul#words
+  - for word in @words
+    %li= link_to "#{word.name}", word # (#{word.entry.definitions.size})", word

@@ -1,4 +1,4 @@
-class OrthsController < InheritedResources::Base
+class OrthsController < ApplicationController
   def index
     @orths = Orth.find_all_by_head 'B'
   end

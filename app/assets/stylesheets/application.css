@@ -1,7 +1,6 @@
 /*
 *= require_self
 *= require_tree .
-*/
 
 #browse { border:1px solid #CCC; float:left; width:30em; }
 #browse ul { list-style:none; }
@@ -82,3 +81,4 @@ table.results .def .more { float:right; }
 table.results dl { clear:both; overflow:auto; width:14em;}
 table.results dl dt { clear:left; float:left; font-weight:bold; width:5em; }
 table.results dl dd { clear:right; float:left; }
+*/
