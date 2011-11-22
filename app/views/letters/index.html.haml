@@ -1,6 +1,11 @@
 - title 'Browse By Letter'
 
-- for letter in @letters
-  .letter
-    %h3= link_to letter.name, letter
-    %p= "#{letter.words.size} Entries"
+#letters
+  - window = 5
+  - 0.upto(@letters.size / window) do |column| 
+    .column
+      - x = column*window
+      - @letters[x..x+window].each do |letter|
+        .letter
+          %h3= link_to letter.name, letter
+          %p= "#{letter.words.size} Entries"

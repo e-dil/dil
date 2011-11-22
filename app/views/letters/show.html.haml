@@ -10,6 +10,6 @@
 
 %ul#words
   - for word in @words
-    %li= link_to "#{word.name}", word # (#{word.entry.definitions.size})", word
+    %li= link_to "#{word.name}", word 
 
 = paginate(@words)

@@ -5,6 +5,7 @@ gem 'haml'
 gem 'redis'
 gem "kaminari"
 gem 'mysql'
+#gem 'activerecord-jdbcmysql-adapter'
 gem 'nokogiri'
 gem 'jquery-rails'
 gem 'thinking-sphinx', '2.0.5'

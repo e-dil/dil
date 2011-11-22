@@ -9,9 +9,7 @@ class WordsController < ApplicationController
       @words = defs.map(&:entry).map(&:terms).flatten.map(&:word).uniq
     else
       m = params[:q].match(/^(\d+) (.+)/)
-      unless m.nil?
-        params[:q] = m[2]
-      end
+      params[:q] = m[2] unless m.nil?
       word = Word.find_by_name(params[:q])
       redirect_to word unless word.nil?
     
