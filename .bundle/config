@@ -1,3 +1,1 @@
----
-BUNDLE_PATH: rake
-BUNDLE_DISABLE_SHARED_GEMS: '1'
+--- {}
